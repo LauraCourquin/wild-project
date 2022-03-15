@@ -21,13 +21,35 @@
     <main>
         <h1>TITRE SECTION</h1>
         <form action="">
-            <label for="name">Name</label>
+            <label for="Prénom">Prénom:</label><br>
             <input 
                 type="text"
-                id="name"
-                name="name"
-                value="Enter your name"
-            />
+                placeholder="Entrez votre prénom..."
+            /><br>
+            <label for="name">Nom:</label><br>
+            <input 
+                type="text"
+                placeholder="Entrez votre nom..."
+            /><br>
+            <label for="société">Société:</label><br>
+            <input 
+                type="text"
+                placeholder="Votre société..."
+            /><br>
+            <label for="email">E-mail:</label><br>
+            <input 
+                type="email"
+                placeholder="Entrez un e-mail de contact"
+            /><br>
+            <label for="téléphone">Numéro de téléphone:</label><br>
+            <input 
+                type="number"
+                placeholder="Entrez un numéro de Contact"
+            /><br>
+            <label for="message">Message:</label><br>
+            <textarea id="message" name="message"></textarea>
+            <br /><br />
+            <input type="submit" value="Envoyer" />
         </form>
     </main>
     <footer>
@@ -54,7 +76,7 @@
             github
             </a>
             <a class="footer__box-social-link" href="https://www.instagram.com/wildcodeschoolofficial/?hl=en" target="_blank" title="Retrouvez la Wild sur Instagram">
-            intagram
+            instagram
             </a>
         </div>
     </footer>
