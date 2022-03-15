@@ -1,0 +1,74 @@
+
+
+* {
+  
+    --color-bg-general: #f5e5e5;
+    --font-size-general: 1rem;
+    --color-font-general: #073B4C; 
+    --font-weight-general: 400;
+    --font-general:'Andika New Basic', sans-serif;
+    --line-height-general : 1.75;
+
+    --color-border-nav: #F76D6D;
+    --font-size-nav: 1rem;
+    --color-font-nav:#073B4C;
+
+    --color-bg-footer: #118AB2;
+    --font-size-footer: 0.8rem; 
+    --color-font-footer: #f5e5e5;
+
+    --font-color-paragraph: yellow;
+    --font-size-paragraph:3.052rem;
+    
+    --font-color-title:red;
+
+    --paddingSection:1vw;
+    margin:0;
+    padding:0;
+   
+  }
+
+
+body {
+background: var(--color-bg-general);
+font-family: var(--font-general);
+font-weight: var(--font-weight-general);
+line-height: var(--line-height-general);
+color: var(--color-font-general);
+}
+
+nav{
+border : 1px solid var(--color-border-nav);
+font-size: var(--font-size-nav);
+color : var(--color-font-nav);
+}
+
+footer{
+    background-color: var(--color-bg-footer);
+    font-size: var(--font-size-footer);
+    font-color: var(--color-font-footer);
+}
+p {margin-bottom: 1rem;}
+
+h1, h2, h3, h4, h5 , ul {
+margin: 3rem 0 1.38rem;
+font-family: var(font-size);
+font-weight: 400;
+line-height: var(--line-height-general);
+color:var(--color-font-title);
+}
+
+h1 {
+margin-top: 0;
+font-size: var(--font-size-paragraph);
+}
+
+h2 {font-size: 2.441rem;}
+
+h3 {font-size: 1.953rem;}
+
+h4 {font-size: 1.563rem;}
+
+h5 {font-size: 1.25rem;}
+
+small, .text_small {font-size: 0.8rem;}
