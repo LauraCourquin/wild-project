@@ -37,10 +37,27 @@ line-height: var(--line-height-general);
 color: var(--color-font-general);
 }
 
-nav{
+header{
 border : 1px solid var(--color-border-nav);
 font-size: var(--font-size-nav);
 color : var(--color-font-nav);
+display: flex;
+}
+
+header img {
+  width: auto;
+  height: 50px;
+  margin: 1em;
+}
+
+nav li {
+  display: inline;
+  
+}
+
+nav ul {
+  margin-top: 26px;
+
 }
 
 footer{
