@@ -1,33 +1,45 @@
+/*style.css*/
 
+/*varaible declaration*/
+:root{
+  /* general variable*/
+  --color-bg-general: #f5e5e5;
+  --font-size-general: 1rem;
+  --color-font-general: #073B4C; 
+  --font-weight-general: 400;
+  --font-general:'Andika New Basic', sans-serif;
+  --line-height-general : 1.75;
+/*navbar variable*/
+  --color-border-nav: #F76D6D;
+  --font-size-nav: 1rem;
+  --color-font-nav:#073B4C;
+/*footer variable*/
+  --color-bg-footer: #118AB2;
+  --font-size-footer: 0.8rem; 
+  --color-font-footer: #f5e5e5;
+/*paragraph variable*/
+  --font-color-paragraph: yellow;
+  --font-size-paragraph:3.052rem;
+/*tittle vararible*/ 
+  --font-color-title:red;
 
-* {
+  --paddingSection:25vw;
+  margin:0;
+  padding:0;
+
+}
+/*general config*/
+*{
+  box-sizing: border-box;
+
+}
   
-    --color-bg-general: #f5e5e5;
-    --font-size-general: 1rem;
-    --color-font-general: #073B4C; 
-    --font-weight-general: 400;
-    --font-general:'Andika New Basic', sans-serif;
-    --line-height-general : 1.75;
-
-    --color-border-nav: #F76D6D;
-    --font-size-nav: 1rem;
-    --color-font-nav:#073B4C;
-
-    --color-bg-footer: #118AB2;
-    --font-size-footer: 0.8rem; 
-    --color-font-footer: #f5e5e5;
-
-    --font-color-paragraph: yellow;
-    --font-size-paragraph:3.052rem;
-    
-    --font-color-title:red;
-
-    --paddingSection:1vw;
-    margin:0;
-    padding:0;
-   
-  }
-
+img.test {
+  padding: 0;
+  margin: 0;
+  border: #bbbb solid 1px;
+  width: 200px;
+}
 
 body {
 background: var(--color-bg-general);
@@ -35,18 +47,55 @@ font-family: var(--font-general);
 font-weight: var(--font-weight-general);
 line-height: var(--line-height-general);
 color: var(--color-font-general);
+padding-left:var(--paddingSection);
+padding-right:var(--paddingSection);
 }
 
-nav{
-border : 1px solid var(--color-border-nav);
-font-size: var(--font-size-nav);
-color : var(--color-font-nav);
+main{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
 }
+
+header{
+  background-color: #ed6c6d;
+  border : 1px solid var(--color-border-nav);
+  font-size: var(--font-size-nav);
+  color : var(--color-font-nav);
+  display: flex;
+}
+
+header img {
+  width: auto;
+  height: 5vw;
+  max-height: 200px;
+  margin: 1em;
+}
+
+.dropDownMenu{
+  
+}
+
+.menuBurger{
+  
+}
+
+.under {
+  display: none;
+}
+
+.desktopMenu {
+  display: none;
+}
+
+
+
+
 
 footer{
     background-color: var(--color-bg-footer);
     font-size: var(--font-size-footer);
-    font-color: var(--color-font-footer);
+    color: var(--color-font-footer);
 }
 
 footer ul {
@@ -61,7 +110,6 @@ footer ul {
   justify-content: flex-end;
   font-size: 20px;
 }
-
 p {margin-bottom: 1rem;}
 
 h1, h2, h3, h4, h5 , ul {
@@ -78,6 +126,12 @@ font-size: var(--font-size-paragraph);
 }
 
 h2 {font-size: 2.441rem;}
+
+/*index.html*/
+div.radio{
+  display: flex;
+  justify-content: center;
+}
 
 h3 {font-size: 1.953rem;}
 
