@@ -44,6 +44,8 @@ color : var(--color-font-nav);
 }
 
 footer{
+  display: flex;
+  justify-content: ;
     background-color: var(--color-bg-footer);
     font-size: var(--font-size-footer);
     font-color: var(--color-font-footer);
@@ -72,3 +74,8 @@ h4 {font-size: 1.563rem;}
 h5 {font-size: 1.25rem;}
 
 small, .text_small {font-size: 0.8rem;}
+
+.basDePage {
+  text-align: center;
+
+}
