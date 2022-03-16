@@ -4,12 +4,15 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="reset.css">
     <link rel="stylesheet" href="style.css">
     <title>Contact</title>
 </head>
 <body>
     <header>
-        <img src="./assets/logo_wild.png"alt="logo wild code school">
+        <div class="logo">
+            <img src="./assets/logo_wild.png"alt="logo wild code school">
+        </div>
         <nav>
             <ul>
                 <li><a href="index.html">Accueil</a></li>
@@ -21,34 +24,33 @@
     <main>
         <h1>TITRE SECTION</h1>
         <form action="">
-            <label for="Prénom">Prénom:</label><br>
+            <label for="Prénom">Prénom:</label>
             <input 
                 type="text"
                 placeholder="Entrez votre prénom..."
-            /><br>
+            />
             <label for="name">Nom:</label><br>
             <input 
                 type="text"
                 placeholder="Entrez votre nom..."
-            /><br>
-            <label for="société">Société:</label><br>
+            />
+            <label for="société">Société:</label>
             <input 
                 type="text"
                 placeholder="Votre société..."
-            /><br>
-            <label for="email">E-mail:</label><br>
+            />
+            <label for="email">E-mail:</label>
             <input 
                 type="email"
                 placeholder="Entrez un e-mail de contact"
-            /><br>
-            <label for="téléphone">Numéro de téléphone:</label><br>
+            />
+            <label for="téléphone">Numéro de téléphone:</label>
             <input 
                 type="number"
                 placeholder="Entrez un numéro de Contact"
-            /><br>
-            <label for="message">Message:</label><br>
+            />
+            <label for="message">Message:</label>
             <textarea id="message" name="message"></textarea>
-            <br /><br />
             <input type="submit" value="Envoyer" />
         </form>
     </main>
