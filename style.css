@@ -99,6 +99,10 @@ footer{
     background-color: var(--color-bg-footer);
     font-size: var(--font-size-footer);
     color: var(--color-font-footer);
+    display:flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: flex-end;
 }
 
 footer ul {
@@ -109,7 +113,7 @@ footer ul {
 }
 
 /* suppression de margin top ppour uniformiser la page*/
-.basDePage ul {
+.footerUl ul {
   margin-top: 0;
 }
 
@@ -119,7 +123,7 @@ footer ul {
   font-size: 20px;
 }
 
-h1, h2, h3, h4, h5 , ul {
+h1, h2, h3, h4, h5 {
 margin: 3rem 0 1.38rem;
 font-family: var(font-size);
 font-weight: 400;
