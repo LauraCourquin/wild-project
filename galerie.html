@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="style.css">
     <title>Gallery</title>
 </head>
+  
 <body>
     <header>
         <div class="logo">
@@ -22,7 +23,9 @@
         </nav>
         <h1>TITRE SECTION</h1>
     </header>
-    <section>
+   
+    <main class="galery">
+       <section>
         <form>
             <label for="Thématiques">Thématiques:</label><br>
             <select name="Thématiques" taille="1">
@@ -46,17 +49,19 @@
             </select>
         </form>
     </section>
-    <br>
-    <main>
-        <section>
-            <img class="test" src="./assets/image_test.jpg" alt="image test">
-            <h2>nom projet 1</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus feugiat volutpat velit, quis mattis purus ornare sit amet. Nunc egestas nisi a porta suscipit. Vivamus iaculis ex vitae eleifend facilisis.</p>
+     <section class = "cardProject1">
+            <img src="./assets/image_test.jpg" alt="image test" >
+            <div class="descriptionWildProject">
+                <h2>nom projet 1</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus feugiat volutpat velit, quis mattis purus ornare sit amet. Nunc egestas nisi a porta suscipit. Vivamus iaculis ex vitae eleifend facilisis.</p>
+            </div>
         </section>
-        <section>
-            <img class="test" src="./assets/image_test.jpg" alt="image test">
-            <h2>nom projet 2</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus feugiat volutpat velit, quis mattis purus ornare sit amet. Nunc egestas nisi a porta suscipit. Vivamus iaculis ex vitae eleifend facilisis.</p>
+        <section class = "cardProject2">
+            <img src="./assets/image_test.jpg" alt="image test" >
+            <div class="descriptionWildProject">
+                <h2>nom projet 2</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus feugiat volutpat velit, quis mattis purus ornare sit amet. Nunc egestas nisi a porta suscipit. Vivamus iaculis ex vitae eleifend facilisis.</p>
+            </div>
         </section>
     </main>
     <footer>
@@ -64,6 +69,7 @@
             <ul>
                 <li>&copy Copyright</li>
                 <li>mention légales</li>
+
                 <li><a href="https://www.wildcodeschool.com/fr-FR">Wild Code School</a></li>
                 <li>contat groupe</li>
             </ul>
