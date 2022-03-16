@@ -4,23 +4,52 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="reset.css">
     <link rel="stylesheet" href="style.css">
-    <title>Galerie de projets</title>
+    <title>Gallery</title>
 </head>
+  
 <body>
     <header>
-        <img src="./assets/logo_wild.png"alt="logo wild code school">
+        <div class="logo">
+            <img src="./assets/logo_wild.png"alt="logo wild code school">
+        </div>
         <nav>
             <ul>
-                <li>Qui sommes nous ?</li>
-                <li>Gallerie</li>
-                <li>Vous avez un projet ?</li>
+                <li><a href="index.html"> Accueil</a></li>
+                <li><a href="presentation.html">Qui sommes nous ?</a></li>
+                <li><a href="contact.html"> Vous avez un projet ?</a></li>
             </ul>
         </nav>
-        <h1>Galerie de projets </h1>
+        <h1>TITRE SECTION</h1>
     </header>
+   
     <main class="galery">
-        <section class = "cardProject1">
+       <section>
+        <form>
+            <label for="Thématiques">Thématiques:</label><br>
+            <select name="Thématiques" taille="1">
+                <option>défaut
+                <option>environnement
+                <option>e-commerce
+                <option>défaut
+                <option>défaut
+            </select>
+        </form>
+    </section>
+    <section>
+        <form>
+            <label for="Technologies">Technologies:</label><br>
+            <select name="Technologies" taille="1">
+                <option>défaut
+                <option>Javascript
+                <option>PHP
+                <option>Angular
+                <option>React
+            </select>
+        </form>
+    </section>
+     <section class = "cardProject1">
             <img src="./assets/image_test.jpg" alt="image test" >
             <div class="descriptionWildProject">
                 <h2>nom projet 1</h2>
@@ -40,7 +69,8 @@
             <ul>
                 <li>&copy Copyright</li>
                 <li>mention légales</li>
-                <li><a href="https://www.wildcodeschool.com/fr-FR"></a> href=</li>
+
+                <li><a href="https://www.wildcodeschool.com/fr-FR">Wild Code School</a></li>
                 <li>contat groupe</li>
             </ul>
             <a class="footer__box-social-link" href="https://www.facebook.com/wildcodeschool" target="_blank" title="Retrouvez la Wild sur Facebook">
@@ -59,7 +89,7 @@
             github
             </a>
             <a class="footer__box-social-link" href="https://www.instagram.com/wildcodeschoolofficial/?hl=en" target="_blank" title="Retrouvez la Wild sur Instagram">
-            intagram
+            instagram
             </a>
         </div>
     </footer>
