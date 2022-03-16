@@ -1,6 +1,6 @@
 /*style.css*/
 
-/*varaible declaration*/
+/*variable declaration GENERALE*/
 :root{
   /* general variable*/
   --color-bg-general: #f5e5e5;
@@ -59,6 +59,75 @@ header, nav, main, footer{
   margin:auto;
 }
 
+
+h1, h2, h3, h4, h5 {
+  margin: 3rem 0 1.38rem;
+  font-family: var(font-size);
+  font-weight: 400;
+  line-height: var(--line-height-general);
+  color:var(--color-font-title);
+  }
+  
+  h1 {
+  margin-top: 0;
+  
+  font-size: var(--font-size-paragraph);
+  }
+  
+  h2 {font-size: 2.441rem;}
+  
+
+  
+  h3 {font-size: 1.953rem;}
+  
+  h4 {font-size: 1.563rem;}
+  
+  h5 {font-size: 1.25rem;}
+  
+  
+  small, .text_small {font-size: 0.8rem;}
+  
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*HEADER ET NAV BARRE*/
 header{
   background-color: #ed6c6d;
   border : 1px solid var(--color-border-nav);
@@ -74,9 +143,6 @@ header img {
   margin: 1em;
 }
 
-main{
-  background-color: var(--color-bg-general);
-}
 
 .dropDownMenu{
   
@@ -94,6 +160,159 @@ main{
   display: none;
 }
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*PARTIE PRINCIPALE DU SITE*/
+
+
+main{
+  background-color: var(--color-bg-general);
+}
+
+
+  
+  /*index.html*/
+  div.radio{
+    display: flex;
+    justify-content: center;
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+/*FOOTER*/
 
 footer{
     background-color: var(--color-bg-footer);
@@ -122,36 +341,3 @@ footer ul {
   justify-content: flex-end;
   font-size: 20px;
 }
-
-h1, h2, h3, h4, h5 {
-margin: 3rem 0 1.38rem;
-font-family: var(font-size);
-font-weight: 400;
-line-height: var(--line-height-general);
-color:var(--color-font-title);
-}
-
-h1 {
-margin-top: 0;
-
-font-size: var(--font-size-paragraph);
-}
-
-h2 {font-size: 2.441rem;}
-
-
-/*index.html*/
-div.radio{
-  display: flex;
-  justify-content: center;
-}
-
-h3 {font-size: 1.953rem;}
-
-h4 {font-size: 1.563rem;}
-
-h5 {font-size: 1.25rem;}
-
-
-small, .text_small {font-size: 0.8rem;}
-
