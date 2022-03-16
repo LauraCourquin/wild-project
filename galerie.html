@@ -4,12 +4,15 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="reset.css">
     <link rel="stylesheet" href="style.css">
     <title>Gallery</title>
 </head>
 <body>
     <header>
-        <img src="./assets/logo_wild.png"alt="logo wild code school">
+        <div class="logo">
+            <img src="./assets/logo_wild.png"alt="logo wild code school">
+        </div>
         <nav>
             <ul>
                 <li><a href="index.html"> Accueil</a></li>
@@ -19,14 +22,39 @@
         </nav>
         <h1>TITRE SECTION</h1>
     </header>
+    <section>
+        <form>
+            <label for="Thématiques">Thématiques:</label><br>
+            <select name="Thématiques" taille="1">
+                <option>défaut
+                <option>environnement
+                <option>e-commerce
+                <option>défaut
+                <option>défaut
+            </select>
+        </form>
+    </section>
+    <section>
+        <form>
+            <label for="Technologies">Technologies:</label><br>
+            <select name="Technologies" taille="1">
+                <option>défaut
+                <option>Javascript
+                <option>PHP
+                <option>Angular
+                <option>React
+            </select>
+        </form>
+    </section>
+    <br>
     <main>
         <section>
-            <img src="./assets/image_test.jpg" alt="image test" height="300px" width="400px">
+            <img class="test" src="./assets/image_test.jpg" alt="image test">
             <h2>nom projet 1</h2>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus feugiat volutpat velit, quis mattis purus ornare sit amet. Nunc egestas nisi a porta suscipit. Vivamus iaculis ex vitae eleifend facilisis.</p>
         </section>
         <section>
-            <img src="./assets/image_test.jpg" alt="image test" height="300px" width="400px">
+            <img class="test" src="./assets/image_test.jpg" alt="image test">
             <h2>nom projet 2</h2>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus feugiat volutpat velit, quis mattis purus ornare sit amet. Nunc egestas nisi a porta suscipit. Vivamus iaculis ex vitae eleifend facilisis.</p>
         </section>
@@ -55,7 +83,7 @@
             github
             </a>
             <a class="footer__box-social-link" href="https://www.instagram.com/wildcodeschoolofficial/?hl=en" target="_blank" title="Retrouvez la Wild sur Instagram">
-            intagram
+            instagram
             </a>
         </div>
     </footer>
