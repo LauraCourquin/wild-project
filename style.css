@@ -51,37 +51,69 @@ footer{
 }
 
 
-.wildProject{
+.cardProject1, .cardProject2 {
 
 display : flex;
+
 justify-content: space-between;
 width:80%;
 margin:var(--marginSection);
 padding:var(--paddingSection);
+
 }
 
 
+@media screen and (min-width: 600px) {
+  .cardProject2 {
 
-.wildProject img{
+/* En desktop, on veut que sur les lignes impaires, le texte soit à gauche de la photo - on ne veut pas cet effet en mobile
+*/
+    flex-direction: row-reverse;
+  
+  }
+
+
+}
+
+@media screen and (max-width: 600px) {
+
+  .cardProject1, .cardProject2{
+
+/* En mobile, on veut que le texte aille sous la photo (wrap)
+*/
+    flex-wrap: wrap;
+    border:1px solid green;
+
+  }
+
+}
+
+.galery img{
  
-  border:1px solid green;
+
   width : 80%;
   height : 80%;
-  max-width : 800px;
-  max-height : 800px;
+  max-width : 40vw;
+  max-height : 40vw;
+  padding:var(--paddingSection);
+  margin:var(--marginSection);
 }
 
 .descriptionWildProject {
   border:1px solid pink;
-  margin:var(--marginSection);
-  padding:var(--paddingSection);
   width : 80%;
   height : 80%;
   max-width : 800px;
   max-height : 800px;
+  padding:var(--paddingSection);
+  margin:var(--marginSection);
 }
 
-.wildProject p {
+
+
+.descriptionWildProject h2 {
+  margin:0;
+  padding: 0;
 
   
 }
