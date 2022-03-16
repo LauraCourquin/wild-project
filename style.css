@@ -98,6 +98,18 @@ footer{
     color: var(--color-font-footer);
 }
 
+footer ul {
+  display: flex;
+  align-items: stretch;
+  margin-top: 3em; 
+  list-style: none;
+}
+
+.logosFooter {
+  display: flex;
+  justify-content: flex-end;
+  font-size: 20px;
+}
 p {margin-bottom: 1rem;}
 
 h1, h2, h3, h4, h5 , ul {
@@ -128,3 +140,4 @@ h4 {font-size: 1.563rem;}
 h5 {font-size: 1.25rem;}
 
 small, .text_small {font-size: 0.8rem;}
+
