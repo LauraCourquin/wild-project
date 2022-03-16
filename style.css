@@ -113,67 +113,6 @@ footer ul {
 }
 
 
-.cardProject1, .cardProject2 {
-
-display : flex;
-
-justify-content: space-between;
-width:80%;
-margin:var(--marginSection);
-padding:var(--paddingSection);
-
-
-}
-
-
-@media screen and (min-width: 375px) {
-  .cardProject2 {
-
-/* En desktop, on veut que sur les lignes impaires, le texte soit à gauche de la photo - on ne veut pas cet effet en mobile
-*/
-    flex-direction: row-reverse;
-    flex-wrap: nowrap;
-  }
-
-
-}
-@media screen and (max-width: 375px) {
-  .cardProject1, .cardProject2 {
-/* En mobile, on veut que le texte aille sous la photo (wrap)
-*/
-flex-wrap: wrap;
-/*Sera à améliorer pour que ce comportement se fasse par défaut, sans avoir à utiliser de media query*/
-  }
-
-
-}
-
-.galery img{
- 
-  max-width : 40vw;
-  max-height : 40vw;
-  padding:var(--paddingSection);
-  margin:var(--marginSection);
-
-}
-
-.descriptionWildProject {
-  width : 40%;
-  max-width : 40vw;
-  padding:var(--paddingSection);
-  margin:var(--marginSection);
-}
-
-
-
-.descriptionWildProject h2 {
-  margin:0;
-  padding: 0;
-/* pour la taille voir ci dessous*/
-
-  
-}
-
 h1, h2, h3, h4, h5 , ul {
 margin: 3rem 0 1.38rem;
 font-family: var(font-size);
