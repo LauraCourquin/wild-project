@@ -19,7 +19,7 @@
     --color-font-footer: #f5e5e5;
   /*paragraph variable*/
     --font-color-paragraph: yellow;
-    --font-size-paragraph:1.25rem;
+    --font-size-paragraph:1rem;
   /*tittle vararible*/ 
     --font-color-title:red;
     --paddingSection:1vw;
@@ -35,8 +35,7 @@
   margin:0;
   padding:0;
   
-    margin:0;
-  padding:0;
+
 
 
 }
@@ -61,7 +60,7 @@ header, nav, footer{
 h1, h2, h3, h4, h5 {
   margin: 3rem 0 1.38rem;
   font-family: var(font-size);
-  font-weight: 400;
+
   line-height: var(--line-height-general);
   color:var(--color-font-title);
   }
@@ -305,7 +304,7 @@ main img{
 }
 
 main h2 {
-border:1px solid red;
+
   display: flex;
   justify-content: flex-start;
   width: 90%;
@@ -458,26 +457,44 @@ justify-content:left;
   padding:var(--paddingSection); 
   }
   
-  .galery img{
-    object-fit: cover;
-   
+  .galery img, .quiSommesNous img {
+    /* object-fit: contain;  */
+    aspect-ratio: 16/9;
+    width:40vw ;
+   /* max-height:40vh */
+ 
     }
     
-  .galery .descriptionWildProject{
+.text{
+display:none;
+border:1px solid red;
+
+}
+
+  .galery .descriptionWildProject, .quiSommesNousParaph{
       padding-left:var(--paddingSection); 
 
   }
+  .descriptionWildProject, .quiSommesNousParaph{
+  
 
-  .descriptionWildProject h2{
+  } 
+
+
+  .descriptionWildProject h3, .quiSommesNousParaph h3{
+    padding:0;
+    margin:0;
     padding-left:var(--paddingSection);
-  }
 
-.descriptionWildProject p{
+  } 
+
+.descriptionWildProject p, .quiSommesNousParaph p, .quiSommesNousParaph ul{
 padding-left:var(--paddingSection); 
 font-size: var(--font-size-paragraph);
+
 }
 
-  @media screen and (min-width: 375px) {
+  @media screen and (min-width: 700px) {
   .cardProject2 {
   /* En desktop, on veut que sur les lignes impaires, le texte soit à gauche de la photo - on ne veut pas cet effet en mobile
   */
@@ -485,7 +502,7 @@ font-size: var(--font-size-paragraph);
   flex-wrap: nowrap;
   }
   }
-  @media screen and (max-width: 375px) {
+  @media screen and (max-width: 700px) {
   .cardProject1, .cardProject2 {
   /* En mobile, on veut que le texte aille sous la photo (wrap)
   */
