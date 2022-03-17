@@ -190,7 +190,7 @@ header img {
   position: fixed;
   visibility: hidden;
   top: 0;
-  /* left: -100%; */
+  right: 0;
   width: 200px;
   height: auto;
   margin: 0;
