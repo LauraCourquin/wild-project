@@ -407,6 +407,31 @@ input.send{
 
 
 
+.cardProject1, .cardProject2 {
+  border : 1px solid red;
+  display : flex;
+  
+  width:90%;
+  /* margin:var(--marginSection);
+  padding:var(--paddingSection); */
+  }
+  
+  
+  @media screen and (min-width: 375px) {
+  .cardProject2 {
+  /* En desktop, on veut que sur les lignes impaires, le texte soit à gauche de la photo - on ne veut pas cet effet en mobile
+  */
+  flex-direction: row-reverse;
+  flex-wrap: nowrap;
+  }
+  }
+  @media screen and (max-width: 375px) {
+  .cardProject1, .cardProject2 {
+  /* En mobile, on veut que le texte aille sous la photo (wrap)
+  */
+  flex-wrap: wrap;
+  /*Sera à améliorer pour que ce comportement se fasse par défaut, sans avoir à utiliser de media query*/
+  }
 
 
 
