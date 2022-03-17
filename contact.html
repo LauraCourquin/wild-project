@@ -32,43 +32,47 @@
         </nav>
     </header>
     <main>
-        <h1>Partagez-nous votre besoin</h1>
+        <h2>Parce que c'est votre projet !!!</h2>
         <form class="contactForm" action="">
             <div class="form">
-                <div class="personn">
-                    <label for="name">Prénom:</label><br>
-                    <input 
-                        type="text"
-                        placeholder="Votre prénom..."
-                    />
-                    <label class="lastname" for="lastname">Nom:</label>
-                    <input class="lastname" 
-                        type="text"
-                        placeholder="Votre nom..."
-                    />
-                </div>
-                <div class="enterprise">
-                    <label for="société">Société:</label>
-                    <input 
-                        type="text"
-                        placeholder="Votre société..."
-                    />
-                </div>
-                <div class="contact">
-                    <label for="email">E-mail:</label>
-                    <input 
-                        type="email"
-                        placeholder="name@mail.com"
-                    />
-                    <label for="Téléphone">tel:</label>
-                    <input 
-                        type="text"
-                        placeholder="+33"
-                    />
-                </div>
+                <fieldset>
+                    <label for="name">
+                        Prénom:
+                        <input class="field" type="text" id="name"
+                        placeholder="Votre prénom..." />
+                    </label>
+                    <label for="lastname">
+                        Nom:
+                        <input class="field" type="text" id="lastname"
+                        placeholder="Votre nom..." />
+                    </label>
+                </fieldset>
+                <fieldset>
+                    <label for="société">
+                        Société:
+                        <input class="field" type="text" id="société"
+                        placeholder="Votre Société..." />
+                    </label>
+                </fieldset>
+                <fieldset>
+                    <label for="email">
+                        E-mail:
+                        <input class="field" type="email" id="email"
+                        placeholder="name@mail.com" />
+                    </label>
+                    <label for="Téléphone">
+                        Téléphone:
+                        <input class="field" type="text" id="téléphone"
+                        placeholder="+33" />
+                    </label>
+                </fieldset>
             </div>
-            <label for="message">Message:</label>
-            <textarea class="message" name="message"></textarea>
+            <fieldset>
+                <label for="message">
+                    Message:
+                    <textarea name="message" id="message" placeholder="Votre message ici..."></textarea>
+                </label>
+            </fieldset>
             <input class="send" type="submit" value="Envoyer" />
         </form>
     </main>

@@ -373,18 +373,27 @@ div.form{
   flex-direction: column;
 }
 
-textarea.message{
+label textarea{
   margin-left: var(--marginMessage);
   margin-right: var(--marginMessage);
   height: 20vh;
-  width: 42vw;
+  width: 50vw;
+} 
+fieldset label textarea{
+  display:flex;
+  flex-direction: column;
+}
+
+input.field, input.send, textarea{
+  border:none;
+  border-radius: 5%;
+  box-shadow: 4px 4px 4px #073B4C;
+  background-color: #ddd;
 }
 
 input.send{
-  margin-top: 2vw;
-  margin-bottom:2vw;
-  width: 5vw;
-  border: blue solid 1px;
+  margin-top: 4vw;
+  width: 20vw;
 }
 
 /*media query*/
@@ -408,38 +417,54 @@ input.send{
     .menuBurger{
       display:none;
     }
+
 /*formulaire de contact*/
-    div.form{
+    form{
       display:flex;
       width: 50vw;
       height: auto;
       flex-direction: column;
     }
-    
-    div.personn{
-      display: flex;
-      justify-content: space-evenly;
-      margin: 1rem;
+
+    label {
+      display:flex;
+      flex-direction: column;
+      
+    }
+    fieldset {
+      display:flex;
+      justify-content: space-between;
+      margin-top: 0.2rem;
+      margin-bottom: 0.005rem;
+    }
+
+    label textarea{
+      margin-left: var(--marginMessage);
+      margin-right: var(--marginMessage);
+      height: 20vh;
+      width: 30vw;
+    } 
+
+    div.form{
+      display:flex;
+      width: 30vw;
+      height: auto;
+      flex-direction: column;
+      margin-bottom: 2rem;
     }
     
-    div.enterprise{
-      display: flex;
-      justify-content: center;
-      margin: 1rem;
+    input.field, input.send, textarea{
+      background-color: #ddd;
+      border:none;
+      border-radius: 5%;
+      box-shadow: 4px 4px 4px #073B4C;
     }
-    
-    div.contact{
-      display: flex;
-      justify-content: space-evenly;
-      margin: 1rem;
+
+    input.send{
+      margin-top: 2vw;
+      width: 5vw;
     }
-    
   }
-
-
-
-
-
 
 
 
