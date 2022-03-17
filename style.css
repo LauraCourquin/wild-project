@@ -443,6 +443,8 @@ footer{
     flex-flow: row nowrap;
     justify-content: space-between;
     align-items: flex-end;
+    height: 80px;
+    width: auto;
 }
 
 footer a {
@@ -452,9 +454,7 @@ footer a {
 }
 
 footer ul {
-  display: flex;
-  align-items: stretch; 
-  list-style: none;
+  list-style-type: none;
 }
 
 footer li{
