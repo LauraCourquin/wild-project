@@ -1,0 +1,489 @@
+/*style.css*/
+
+/*variable declaration GENERALE*/
+:root{
+  /* general variable*/
+  --color-bg-general: #f5e5e5;
+  --font-size-general: 1rem;
+  --color-font-general: #073B4C; 
+  --font-weight-general: 400;
+  --font-general:'Andika New Basic', sans-serif;
+  --line-height-general : 1.75;
+/*navbar variable*/
+  --color-border-nav: #F76D6D;
+  --font-size-nav: 1rem;
+  --color-font-nav:#073B4C;
+/*footer variable*/
+  --color-bg-footer: #06d6a0;
+  --font-size-footer: 0.8rem; 
+  --color-font-footer: #f5e5e5;
+/*paragraph variable*/
+  --font-color-paragraph: yellow;
+  --font-size-paragraph:3.052rem;
+/*tittle vararible*/ 
+  --font-color-title:red;
+  --paddingSection:1vw;
+  --marginSection:12vw;
+  --marginForm:15vw;
+  --marginMessage:-10vw;
+
+  margin:0;
+  padding:0;
+
+}
+/*general config*/
+
+main.index{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+img.test {
+  padding: 0;
+  margin: 0;
+  width: 70vw;
+  box-shadow: 10px 10px 5px #073B4C;
+}
+
+body {
+font-family: var(--font-general);
+font-weight: var(--font-weight-general);
+line-height: var(--line-height-general);
+color: var(--color-font-general);
+margin:0;
+padding:0;
+}
+
+header, nav, main, footer{
+  width: 99%;
+  margin:auto;
+}
+
+
+h1, h2, h3, h4, h5 {
+  margin: 3rem 0 1.38rem;
+  font-family: var(font-size);
+  font-weight: 400;
+  line-height: var(--line-height-general);
+  color:var(--color-font-title);
+  }
+  
+  h1 {
+  margin-top: 0;
+  margin-bottom: 0;
+  
+  font-size: var(--font-size-paragraph);
+  }
+  p{
+    margin-bottom: 2vw;
+  }
+  
+  h2 {font-size: 2.441rem;}
+  
+
+  
+  h3 {font-size: 1.953rem;}
+  
+  h4 {font-size: 1.563rem;}
+  
+  h5 {font-size: 1.25rem;}
+  
+  
+  small, .text_small {font-size: 0.8rem;}
+  
+  @media screen and (min-width: 700px) { 
+    body {
+      font-family: var(--font-general);
+      font-weight: var(--font-weight-general);
+      line-height: var(--line-height-general);
+      color: var(--color-font-general);
+      /* margin qui permet que le body ne fasse pas toute la largeur*/
+      margin-left:var(--marginSection);
+      margin-right:var(--marginSection);
+      }
+    .dropDownMenu{
+      display: none;
+    }
+    img.test {
+      padding: 0;
+      margin: 0;
+      width: 40vw;
+      box-shadow: 10px 10px 5px #073B4C;
+    }
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*HEADER ET NAV BARRE*/
+header{
+  background-color: #ed6c6d;
+  border : 1px solid var(--color-border-nav);
+  font-size: var(--font-size-nav);
+  color : var(--color-font-nav);
+  display: flex;
+}
+
+header img {
+  width: auto;
+  height: 5vw;
+  max-height: 200px;
+  margin: 1em;
+}
+
+#menuToogle {
+  opacity: 0;
+}
+
+#menuToogle:checked ~ .menuButton > span {
+  transform: rotate(45deg);
+}
+
+#menuToogle:checked ~ .menuButton > span::before {
+  top: 0;
+  transform: rotate(0);
+}
+
+#menuToogle:checked ~ .menuButton > span::after {
+  top: 0;
+  transform: rotate(90deg);
+}
+
+#menuToogle:checked ~ .menuBox {
+  visibility: visible;
+}
+
+.menuButton {
+  display: flex;
+  align-items: center;
+  position: fixed;
+  top: 10px;
+  right: 70px;
+  width: 26px;
+  height: 26px;
+  z-index: 1;
+  cursor: pointer;
+}
+
+.menuButton > span, .menuButton > span:hover, .menuButton > span::before, .menuButton > span::after {
+  display: block; 
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  background-color: red;
+  transition-duration: .25s;
+}
+
+.menuButton > span::after {
+  content: ''; 
+  top: 8px;
+}
+
+.menuBox {
+  display: block;
+  position: fixed;
+  visibility: hidden;
+  top: 0;
+  /* left: -100%; */
+  width: 200px;
+  height: auto;
+  margin: 0;
+  padding: 80px 0;
+  list-style: none;
+  background-color: #ECEFF1;
+  box-shadow: 1px 0px 6px rgba(0, 0, 0, .2);
+  transition-duration: .25s;
+}
+
+.menuItem {
+  display: block;
+  padding: 12px 24px;
+  color: black;
+  text-decoration: none;
+  transition-duration: .25s;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*PARTIE PRINCIPALE DU SITE*/
+
+
+main{
+  background-color: whitesmoke/*var(--color-bg-general);*/
+}
+
+
+  
+  /*index.html*/
+  div.radio{
+    display: flex;
+    justify-content: center;
+    margin :3vw;
+  }
+
+ input.btnradio{
+   background-color: pink;
+   border: #F76D6D solid 4px;
+   width: 2.5vw;
+   height: 2.5vw;
+ } 
+ input.btnradio:hover{
+   background-color: #F76D6D;
+ }
+
+
+/*contact.html*/
+
+form.contact{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-left: var(--marginForm);
+  margin-right: var(--marginForm);
+  border: blue solid 1px;
+}
+div.form{
+  display:flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  border: blue solid 1px;
+}
+
+textarea.message{
+  margin-left: var(--marginMessage);
+  margin-right: var(--marginMessage);
+  height: 10vw;
+  border: blue solid 1px;
+
+}
+
+input.send{
+  margin-top: 2vw;
+  margin-bottom:2vw;
+  width: 5vw;
+  border: blue solid 1px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.cardProject1, .cardProject2 {
+  border : 1px solid red;
+  display : flex;
+  
+  width:90%;
+  /* margin:var(--marginSection);
+  padding:var(--paddingSection); */
+  }
+  
+  
+  @media screen and (min-width: 375px) {
+  .cardProject2 {
+  /* En desktop, on veut que sur les lignes impaires, le texte soit à gauche de la photo - on ne veut pas cet effet en mobile
+  */
+  flex-direction: row-reverse;
+  flex-wrap: nowrap;
+  }
+  }
+  @media screen and (max-width: 375px) {
+  .cardProject1, .cardProject2 {
+  /* En mobile, on veut que le texte aille sous la photo (wrap)
+  */
+  flex-wrap: wrap;
+  /*Sera à améliorer pour que ce comportement se fasse par défaut, sans avoir à utiliser de media query*/
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+/*FOOTER*/
+
+footer{
+    background-color: var(--color-bg-footer);
+    font-size: var(--font-size-footer);
+    color: var(--color-font-footer);
+    display:flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+footer ul {
+  display: flex;
+  align-items: stretch;
+  margin-top: 3em; 
+  list-style: none;
+}
+
+/* suppression de margin top ppour uniformiser la page*/
+.footerUl ul {
+  margin-top: 0;
+}
+
+.logosFooter {
+  display: flex;
+  justify-content: flex-end;
+  font-size: 20px;
+}
