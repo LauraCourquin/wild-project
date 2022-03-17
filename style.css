@@ -24,10 +24,10 @@
     --font-color-title:red;
     --paddingSection:1vw;
     --marginSection:12vw;
-    --marginForm:15vw;
+    --marginForm:0vw;
     --marginMessage:-10vw;
   /*h1*/
-    --font-size-h1:2.441rem;
+    --font-size-h1:1rem;
   
   
   /*h2*/
@@ -69,9 +69,9 @@ h1, h2, h3, h4, h5 {
   margin-top: 0;
   margin-bottom: 0;
   font-size: var(--font-size-h1);
-  
-  /*font-size: var(--font-size-paragraph);*/
   }
+  /*font-size: var(--font-size-paragraph);*/
+
   p{
     margin-bottom: 2vw;
   }
@@ -144,6 +144,10 @@ header img {
   margin: 1em;
 }
 
+.titleNav h2 {
+  fon
+}
+
 #menuToogle {
   opacity: 0;
 }
@@ -171,7 +175,7 @@ header img {
   align-items: center;
   position: fixed;
   top: 10px;
-  right: 70px;
+  right: 20px;
   width: 26px;
   height: 26px;
   z-index: 1;
@@ -197,7 +201,7 @@ header img {
   position: fixed;
   visibility: hidden;
   top: 0;
-  /* left: -100%; */
+  right: 0;
   width: 200px;
   height: auto;
   margin: 0;
@@ -218,6 +222,19 @@ header img {
 
 .desktopMenu{
   display: none;
+}
+
+@media screen and (min-width:700px) {
+  .desktopMenu {
+    display: flex;
+    justify-content: space-around;
+  }
+  .desktopMenu a {
+    text-decoration: none;
+    color: white;
+    font-size: 30px;
+    font-style: bold;
+  }
 }
 
 
@@ -361,34 +378,46 @@ input.btnradio:hover{
 
 /*contact.html*/
 
-form.contact{
+form.contactForm{
   display: flex;
   flex-direction: column;
+  justify-content: center;
   align-items: center;
   margin-left: var(--marginForm);
   margin-right: var(--marginForm);
-  border: blue solid 1px;
+  height: 75vh;
+  width: 75vw;
+  margin-bottom: 10rem;
+
 }
 div.form{
   display:flex;
+  width: 50vw;
+  height: auto;
   flex-direction: column;
-  flex-wrap: wrap;
-  border: blue solid 1px;
 }
 
-textarea.message{
+label textarea{
   margin-left: var(--marginMessage);
   margin-right: var(--marginMessage);
-  height: 10vw;
-  border: blue solid 1px;
+  height: 20vh;
+  width: 50vw;
+} 
+fieldset label textarea{
+  display:flex;
+  flex-direction: column;
+}
 
+input.field, input.send, textarea{
+  border:none;
+  border-radius: 5%;
+  box-shadow: 4px 4px 4px #073B4C;
+  background-color: #ddd;
 }
 
 input.send{
-  margin-top: 2vw;
-  margin-bottom:2vw;
-  width: 5vw;
-  border: blue solid 1px;
+  margin-top: 4vw;
+  width: 20vw;
 }
 
 /*media query*/
@@ -412,12 +441,54 @@ input.send{
     .menuBurger{
       display:none;
     }
+
+/*formulaire de contact*/
+    form{
+      display:flex;
+      width: 50vw;
+      height: auto;
+      flex-direction: column;
+    }
+
+    label {
+      display:flex;
+      flex-direction: column;
+      
+    }
+    fieldset {
+      display:flex;
+      justify-content: space-between;
+      margin-top: 0.2rem;
+      margin-bottom: 0.005rem;
+    }
+
+    label textarea{
+      margin-left: var(--marginMessage);
+      margin-right: var(--marginMessage);
+      height: 20vh;
+      width: 30vw;
+    } 
+
+    div.form{
+      display:flex;
+      width: 30vw;
+      height: auto;
+      flex-direction: column;
+      margin-bottom: 2rem;
+    }
+    
+    input.field, input.send, textarea{
+      background-color: #ddd;
+      border:none;
+      border-radius: 5%;
+      box-shadow: 4px 4px 4px #073B4C;
+    }
+
+    input.send{
+      margin-top: 2vw;
+      width: 5vw;
+    }
   }
-
-
-
-
-
 
 
 
@@ -585,7 +656,7 @@ footer{
     flex-flow: row nowrap;
     justify-content: space-between;
     align-items: flex-end;
-    height: 80px;
+    height: 70px;
     width: auto; 
       }
 }
@@ -598,6 +669,10 @@ footer a {
 
 footer ul {
   list-style-type: none;
+}
+
+.footerUl {
+  margin-bottom: 10px;
 }
 
 footer li{
@@ -615,18 +690,23 @@ footer li{
 
 }
 
-@media screen and (min-width: 600px) { 
-footer {
-  justify-content: center ;
-  display: grid;
-  align-content: space-evenly;
-}
-footer a {
-  text-decoration: none;
-  color: white;
-}
-.logosFooter {
-  justify-content: space-between;
-}
+@media screen and (min-width: 700px) { 
+  .footer {
+    background-color: var(--color-bg-footer);
+    height: 100px;
+    color: white;
+  }
+
+  .footerUl {
+    display: flex;
+    justify-content: center;
+    margin-top: 1em;
+  }
+
+  .footer li {
+    margin-right: 1em;
+  }
+
+
 }
 
