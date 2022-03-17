@@ -27,7 +27,7 @@
     --marginForm:0vw;
     --marginMessage:-10vw;
   /*h1*/
-    --font-size-h1:2.441rem;
+    --font-size-h1:1rem;
   
   
   /*h2*/
@@ -145,6 +145,10 @@ header img {
   margin: 1em;
 }
 
+.titleNav h2 {
+  fon
+}
+
 #menuToogle {
   opacity: 0;
 }
@@ -172,7 +176,7 @@ header img {
   align-items: center;
   position: fixed;
   top: 10px;
-  right: 70px;
+  right: 20px;
   width: 26px;
   height: 26px;
   z-index: 1;
@@ -198,7 +202,7 @@ header img {
   position: fixed;
   visibility: hidden;
   top: 0;
-  /* left: -100%; */
+  right: 0;
   width: 200px;
   height: auto;
   margin: 0;
@@ -219,6 +223,19 @@ header img {
 
 .desktopMenu{
   display: none;
+}
+
+@media screen and (min-width:700px) {
+  .desktopMenu {
+    display: flex;
+    justify-content: space-around;
+  }
+  .desktopMenu a {
+    text-decoration: none;
+    color: white;
+    font-size: 30px;
+    font-style: bold;
+  }
 }
 
 
