@@ -1,50 +1,39 @@
 /*style.css*/
 
 /*variable declaration GENERALE*/
-:root{
+  :root{
   /* general variable*/
-  --color-bg-general: #f5e5e5;
-  --font-size-general: 1rem;
-  --color-font-general: #073B4C; 
-  --font-weight-general: 400;
-  --font-general:'Andika New Basic', sans-serif;
-  --line-height-general : 1.75;
-/*navbar variable*/
-  --color-border-nav: #F76D6D;
-  --font-size-nav: 1rem;
-  --color-font-nav:#073B4C;
-/*footer variable*/
-  --color-bg-footer: #06d6a0;
-  --font-size-footer: 0.8rem; 
-  --color-font-footer: #f5e5e5;
-/*paragraph variable*/
-  --font-color-paragraph: yellow;
-  --font-size-paragraph:3.052rem;
-/*tittle vararible*/ 
-  --font-color-title:red;
-  --paddingSection:1vw;
-  --marginSection:12vw;
-  --marginForm:15vw;
-  --marginMessage:-10vw;
-
+    --color-bg-general: #f5e5e5;
+    --font-size-general: 1rem;
+    --color-font-general: #073B4C; 
+    --font-weight-general: 400;
+    --font-general:'Andika New Basic', sans-serif;
+    --line-height-general : 1.75;
+  /*navbar variable*/
+    --color-border-nav: #F76D6D;
+    --font-size-nav: 1rem;
+    --color-font-nav:#073B4C;
+  /*footer variable*/
+    --color-bg-footer: #06d6a0;
+    --font-size-footer: 0.8rem; 
+    --color-font-footer: #f5e5e5;
+  /*paragraph variable*/
+    --font-color-paragraph: yellow;
+    --font-size-paragraph:3.052rem;
+  /*tittle vararible*/ 
+    --font-color-title:red;
+    --paddingSection:1vw;
+    --marginSection:12vw;
+    --marginForm:15vw;
+    --marginMessage:-10vw;
+  /*h1*/
+    --font-size-h1:2.3rem;
   margin:0;
   padding:0;
 
 }
 /*general config*/
 
-main.index{
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-}
-
-img.test {
-  padding: 0;
-  margin: 0;
-  width: 70vw;
-  box-shadow: 10px 10px 5px #073B4C;
-}
 
 body {
 font-family: var(--font-general);
@@ -55,7 +44,7 @@ margin:0;
 padding:0;
 }
 
-header, nav, main, footer{
+header, nav, footer{
   width: 99%;
   margin:auto;
 }
@@ -72,8 +61,9 @@ h1, h2, h3, h4, h5 {
   h1 {
   margin-top: 0;
   margin-bottom: 0;
+  font-size: var(--font-size-h1);
   
-  font-size: var(--font-size-paragraph);
+  /*font-size: var(--font-size-paragraph);*/
   }
   p{
     margin-bottom: 2vw;
@@ -92,26 +82,6 @@ h1, h2, h3, h4, h5 {
   
   small, .text_small {font-size: 0.8rem;}
   
-  @media screen and (min-width: 700px) { 
-    body {
-      font-family: var(--font-general);
-      font-weight: var(--font-weight-general);
-      line-height: var(--line-height-general);
-      color: var(--color-font-general);
-      /* margin qui permet que le body ne fasse pas toute la largeur*/
-      margin-left:var(--marginSection);
-      margin-right:var(--marginSection);
-      }
-    .dropDownMenu{
-      display: none;
-    }
-    img.test {
-      padding: 0;
-      margin: 0;
-      width: 40vw;
-      box-shadow: 10px 10px 5px #073B4C;
-    }
-  }
 
 
 
@@ -239,98 +209,124 @@ header img {
   transition-duration: .25s;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/*PARTIE PRINCIPALE DU SITE*/
-
-
-main{
-  background-color: whitesmoke/*var(--color-bg-general);*/
+.desktopMenu{
+  display: none;
 }
 
 
-  
-  /*index.html*/
-  div.radio{
-    display: flex;
-    justify-content: center;
-    margin :3vw;
-  }
 
- input.btnradio{
-   background-color: pink;
-   border: #F76D6D solid 4px;
-   width: 2.5vw;
-   height: 2.5vw;
- } 
- input.btnradio:hover{
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*--PARTIE PRINCIPALE DU SITE--*/
+
+main{
+  background-color: whitesmoke; /*var(--color-bg-general);*/
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  width: 99%;
+  margin:auto;
+}
+main img{
+  padding: 0;
+  margin: 0;
+  width: 70vw;
+  box-shadow: 10px 10px 5px #073B4C;
+}
+
+/*index.html*/
+
+div.radio{
+  display: flex;
+  justify-content: center;
+  margin :3vw;
+}
+
+input.btnradio{
+  background-color: pink;
+  border: #F76D6D solid 4px;
+  width: 2.5vw;
+  height: 2.5vw;
+}
+
+input.btnradio:hover{
    background-color: #F76D6D;
- }
+}
 
+/*galerie*/
+
+section.filter{
+  width: 60vw;
+  display: flex;
+  justify-content: space-evenly;
+  margin-bottom: 2vw;
+  font-size: var(--font-size-h1);
+
+}
+
+
+/*presentation*/
 
 /*contact.html*/
 
@@ -364,6 +360,28 @@ input.send{
   border: blue solid 1px;
 }
 
+/*media query*/
+
+  @media screen and (min-width: 700px) { 
+    body {
+      font-family: var(--font-general);
+      font-weight: var(--font-weight-general);
+      line-height: var(--line-height-general);
+      color: var(--color-font-general);
+      /*margin qui permet que le body ne fasse pas toute la largeur*/
+      margin-left:var(--marginSection);
+      margin-right:var(--marginSection);
+      }
+    main img {
+      padding: 0;
+      margin: 0;
+      width: 40vw;
+      box-shadow: 10px 10px 5px #073B4C;
+    }
+    .menuBurger{
+      display:none;
+    }
+  }
 
 
 

@@ -14,27 +14,27 @@
     <header>
         <img src="./assets/logo-wild-code-school-white.png"alt="logo wild code school">
         <nav>
-            <ul class="dropDownMenu">
-                <li ><a class="menuBurger"href="#"><i class="fa-solid fa-bars"></i></a>
-                    <ul class="under">  
-                      <li><a href="galerie.html">Galerie</a></li>
-                      <li><a href="presentation.html">Qui sommes nous </a></li>
-                      <li><a href="contact.html"> Vous avez un projet ?</a></li>
-                    </ul>
-                </li>
+          <div class="menuBurger">
+            <input id="menuToogle" type="checkbox">
+            <label class="menuButton" for="menuToogle"><span></span></label>
+            <ul class="menuBox">
+                <li><a class="menuItem" href="galerie.html">Galerie</a></li>
+                <li><a class="menuItem" href="presentation.html">Qui sommes nous </a></li>
+                <li><a class="menuItem" href="contact.html"> Vous avez un projet ?</a></li>
+          </div>
                 <ul class="desktopMenu">
                     <li>
                       <li><a href="galerie.html">Galerie</a></li>
                       <li><a href="presentation.html">Qui sommes nous </a></li>
-                      <li><a href="contact.html"> Vous avez un projet ?</a></li>
+                      <li><a href="contact.html"> Vous avez un projet ?</a></li> -->
                     </li>
                 </ul>                   
             </ul>
         </nav>
     </header>
-    <main class="galery">
-    <h1>TITRE SECTION</h1>
-    <section>
+    <main>
+    <h1>Parce que c'est votre projet !!!</h1>
+    <section class="filter">
         <form>
             <label for="Thématiques">Thématiques:</label><br>
             <select name="Thématiques" taille="1">
@@ -45,8 +45,6 @@
                 <option>défaut
             </select>
         </form>
-    </section>
-    <section>
         <form>
             <label for="Technologies">Technologies:</label><br>
             <select name="Technologies" taille="1">
@@ -59,19 +57,19 @@
         </form>
     </section>
      <section class = "cardProject1">
-            <img class="test" src="./assets/image_test.jpg" alt="image test" >
+        <img src="./assets/image_test.jpg" alt="image test">
             <div class="descriptionWildProject">
                 <h2>nom projet 1</h2>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus feugiat volutpat velit, quis mattis purus ornare sit amet. Nunc egestas nisi a porta suscipit. Vivamus iaculis ex vitae eleifend facilisis.</p>
             </div>
-        </section>
-        <section class = "cardProject2">
-            <img class="test" src="./assets/image_test.jpg" alt="image test" >
-            <div class="descriptionWildProject">
-                <h2>nom projet 2</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus feugiat volutpat velit, quis mattis purus ornare sit amet. Nunc egestas nisi a porta suscipit. Vivamus iaculis ex vitae eleifend facilisis.</p>
-            </div>
-        </section>
+    </section>
+    <section class = "cardProject2">
+        <img src="./assets/image_test.jpg" alt="image test">
+        <div class="descriptionWildProject">
+            <h2>nom projet 2</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus feugiat volutpat velit, quis mattis purus ornare sit amet. Nunc egestas nisi a porta suscipit. Vivamus iaculis ex vitae eleifend facilisis.</p>
+        </div>
+    </section>
 
     </main>
     <footer>
