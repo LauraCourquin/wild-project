@@ -14,7 +14,7 @@
   --font-size-nav: 1rem;
   --color-font-nav:#073B4C;
 /*footer variable*/
-  --color-bg-footer: #118AB2;
+  --color-bg-footer: #06d6a0;
   --font-size-footer: 0.8rem; 
   --color-font-footer: #f5e5e5;
 /*paragraph variable*/
@@ -22,26 +22,28 @@
   --font-size-paragraph:3.052rem;
 /*tittle vararible*/ 
   --font-color-title:red;
-
   --paddingSection:1vw;
-  --marginSection:10vw;
+  --marginSection:12vw;
+  --marginForm:15vw;
+  --marginMessage:-10vw;
 
   margin:0;
   padding:0;
 
 }
 /*general config*/
-*{
-  /* box-sizing: border-box; */
 
+main.index{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
 }
-  
+
 img.test {
   padding: 0;
   margin: 0;
-  border: #bbbb solid 1px;
-  width: 200px;
-
+  width: 70vw;
+  box-shadow: 10px 10px 5px #073B4C;
 }
 
 body {
@@ -49,13 +51,12 @@ font-family: var(--font-general);
 font-weight: var(--font-weight-general);
 line-height: var(--line-height-general);
 color: var(--color-font-general);
-/* margin qui permet que le body ne fasse pas toute la largeur*/
-margin-left:var(--marginSection);
-margin-right:var(--marginSection);
+margin:0;
+padding:0;
 }
 
 header, nav, main, footer{
-  width: 90%;
+  width: 99%;
   margin:auto;
 }
 
@@ -70,8 +71,12 @@ h1, h2, h3, h4, h5 {
   
   h1 {
   margin-top: 0;
+  margin-bottom: 0;
   
   font-size: var(--font-size-paragraph);
+  }
+  p{
+    margin-bottom: 2vw;
   }
   
   h2 {font-size: 2.441rem;}
@@ -87,7 +92,26 @@ h1, h2, h3, h4, h5 {
   
   small, .text_small {font-size: 0.8rem;}
   
-  
+  @media screen and (min-width: 700px) { 
+    body {
+      font-family: var(--font-general);
+      font-weight: var(--font-weight-general);
+      line-height: var(--line-height-general);
+      color: var(--color-font-general);
+      /* margin qui permet que le body ne fasse pas toute la largeur*/
+      margin-left:var(--marginSection);
+      margin-right:var(--marginSection);
+      }
+    .dropDownMenu{
+      display: none;
+    }
+    img.test {
+      padding: 0;
+      margin: 0;
+      width: 40vw;
+      box-shadow: 10px 10px 5px #073B4C;
+    }
+  }
 
 
 
@@ -285,7 +309,7 @@ header img {
 
 
 main{
-  background-color: var(--color-bg-general);
+  background-color: whitesmoke/*var(--color-bg-general);*/
 }
 
 
@@ -294,11 +318,51 @@ main{
   div.radio{
     display: flex;
     justify-content: center;
+    margin :3vw;
   }
 
+ input.btnradio{
+   background-color: pink;
+   border: #F76D6D solid 4px;
+   width: 2.5vw;
+   height: 2.5vw;
+ } 
+ input.btnradio:hover{
+   background-color: #F76D6D;
+ }
 
 
+/*contact.html*/
 
+form.contact{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-left: var(--marginForm);
+  margin-right: var(--marginForm);
+  border: blue solid 1px;
+}
+div.form{
+  display:flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  border: blue solid 1px;
+}
+
+textarea.message{
+  margin-left: var(--marginMessage);
+  margin-right: var(--marginMessage);
+  height: 10vw;
+  border: blue solid 1px;
+
+}
+
+input.send{
+  margin-top: 2vw;
+  margin-bottom:2vw;
+  width: 5vw;
+  border: blue solid 1px;
+}
 
 
 
