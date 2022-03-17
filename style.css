@@ -19,7 +19,7 @@
     --color-font-footer: #f5e5e5;
   /*paragraph variable*/
     --font-color-paragraph: yellow;
-    --font-size-paragraph:1.25rem;
+    --font-size-paragraph:1rem;
   /*tittle vararible*/ 
     --font-color-title:red;
     --paddingSection:1vw;
@@ -35,8 +35,7 @@
   margin:0;
   padding:0;
   
-    margin:0;
-  padding:0;
+
 
 
 }
@@ -61,7 +60,7 @@ header, nav, footer{
 h1, h2, h3, h4, h5 {
   margin: 3rem 0 1.38rem;
   font-family: var(font-size);
-  font-weight: 400;
+
   line-height: var(--line-height-general);
   color:var(--color-font-title);
   }
@@ -313,19 +312,44 @@ main{
   width: 99%;
   margin:auto;
 
+padding-top:3rem;
+margin-top:0;
+background:   url(./assets/Image_FondBlured.png) no-repeat center center fixed;
+
 }
+
+
+/*media query pour enlever l'image de fond sur version mobile*/
+
+@media screen and (max-width: 370px) { 
+
+  main  {
+    background: none;
+ 
+  }
+ 
+}
+
+
+
 main img{
   padding: 0;
   margin: 0;
   width: 70vw;
   box-shadow: 10px 10px 5px #073B4C;
+   border-radius: 5%;
 }
 
 main h2 {
-border:1px solid red;
+
   display: flex;
   justify-content: flex-start;
   width: 90%;
+  padding-top:0;
+  margin-top:0;
+  /* border:10px solid #06D6A0;
+  box-shadow: 10px 10px 5px #06D6A0;
+  border-radius: 30%;; */
 }
 
 
@@ -373,18 +397,27 @@ div.form{
   flex-direction: column;
 }
 
-textarea.message{
+label textarea{
   margin-left: var(--marginMessage);
   margin-right: var(--marginMessage);
   height: 20vh;
-  width: 42vw;
+  width: 50vw;
+} 
+fieldset label textarea{
+  display:flex;
+  flex-direction: column;
+}
+
+input.field, input.send, textarea{
+  border:none;
+  border-radius: 5%;
+  box-shadow: 4px 4px 4px #073B4C;
+  background-color: #ddd;
 }
 
 input.send{
-  margin-top: 2vw;
-  margin-bottom:2vw;
-  width: 5vw;
-  border: blue solid 1px;
+  margin-top: 4vw;
+  width: 20vw;
 }
 
 /*media query*/
@@ -403,43 +436,59 @@ input.send{
       padding: 0;
       margin: 0;
       width: 40vw;
-      box-shadow: 10px 10px 5px #073B4C;
+   
     }
     .menuBurger{
       display:none;
     }
+
 /*formulaire de contact*/
-    div.form{
+    form{
       display:flex;
       width: 50vw;
       height: auto;
       flex-direction: column;
     }
-    
-    div.personn{
-      display: flex;
-      justify-content: space-evenly;
-      margin: 1rem;
+
+    label {
+      display:flex;
+      flex-direction: column;
+      
+    }
+    fieldset {
+      display:flex;
+      justify-content: space-between;
+      margin-top: 0.2rem;
+      margin-bottom: 0.005rem;
+    }
+
+    label textarea{
+      margin-left: var(--marginMessage);
+      margin-right: var(--marginMessage);
+      height: 20vh;
+      width: 30vw;
+    } 
+
+    div.form{
+      display:flex;
+      width: 30vw;
+      height: auto;
+      flex-direction: column;
+      margin-bottom: 2rem;
     }
     
-    div.enterprise{
-      display: flex;
-      justify-content: center;
-      margin: 1rem;
+    input.field, input.send, textarea{
+      background-color: #ddd;
+      border:none;
+      border-radius: 5%;
+      box-shadow: 4px 4px 4px #073B4C;
     }
-    
-    div.contact{
-      display: flex;
-      justify-content: space-evenly;
-      margin: 1rem;
+
+    input.send{
+      margin-top: 2vw;
+      width: 5vw;
     }
-    
   }
-
-
-
-
-
 
 
 
@@ -493,7 +542,10 @@ section.filter form{
   padding:10px;
   
 }
-.galery h2{
+
+
+
+main h2{
 justify-content:left;
 
 }
@@ -504,26 +556,56 @@ justify-content:left;
   padding:var(--paddingSection); 
   }
   
-  .galery img{
-    object-fit: cover;
-   
+  main img {
+    object-fit: fill;  
+    /* aspect-ratio: 16/9; */
+    width:30vw ;
+   max-height:40vh
+ 
     }
+
+/*La classe .introIndex ert à gérer le bloc central (texte d'intro + image + descr) sur la page d'accueil*/
+
+main .introIndex{
+width:50vw;
+
+}
+
+
+
+
+
+
+    @media screen and (max-width: 700px) {
+      main img {
+      
+        width:60vw ;
+     
+     
+        }
     
-  .galery .descriptionWildProject{
+      }
+
+    
+  main .descriptionWildProject, .quiSommesNousParaph{
       padding-left:var(--paddingSection); 
 
   }
+  .descriptionWildProject, .quiSommesNousParaph{
+  
 
-  .descriptionWildProject h2{
-    padding-left:var(--paddingSection);
-  }
+  } 
 
-.descriptionWildProject p{
-padding-left:var(--paddingSection); 
-font-size: var(--font-size-paragraph);
-}
 
-  @media screen and (min-width: 375px) {
+  .descriptionWildProject h3, .quiSommesNousParaph h3{
+    padding:0;
+    margin:0;
+
+
+  } 
+
+
+  @media screen and (min-width: 700px) {
   .cardProject2 {
   /* En desktop, on veut que sur les lignes impaires, le texte soit à gauche de la photo - on ne veut pas cet effet en mobile
   */
@@ -531,7 +613,7 @@ font-size: var(--font-size-paragraph);
   flex-wrap: nowrap;
   }
   }
-  @media screen and (max-width: 375px) {
+  @media screen and (max-width: 700px) {
   .cardProject1, .cardProject2 {
   /* En mobile, on veut que le texte aille sous la photo (wrap)
   */
