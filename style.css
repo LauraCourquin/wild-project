@@ -225,6 +225,19 @@ header img {
   display: none;
 }
 
+@media screen and (min-width:700px) {
+  .desktopMenu {
+    display: flex;
+    justify-content: space-around;
+  }
+  .desktopMenu a {
+    text-decoration: none;
+    color: white;
+    font-size: 30px;
+    font-style: bold;
+  }
+}
+
 
 
 
