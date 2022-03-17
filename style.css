@@ -557,7 +557,7 @@ footer{
     flex-flow: row nowrap;
     justify-content: space-between;
     align-items: flex-end;
-    height: 70px;
+    height: 80px;
     width: auto; 
       }
 }
@@ -570,10 +570,6 @@ footer a {
 
 footer ul {
   list-style-type: none;
-}
-
-.footerUl {
-  margin-bottom: 10px;
 }
 
 footer li{
@@ -607,7 +603,5 @@ footer li{
   .footer li {
     margin-right: 1em;
   }
-
-
 }
 
