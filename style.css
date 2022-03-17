@@ -529,7 +529,8 @@ footer{
     justify-content: space-between;
     align-items: flex-end;
     height: 80px;
-    width: auto;
+    width: auto; 
+      }
 }
 
 footer a {
@@ -556,4 +557,19 @@ footer li{
   font-size: 20px;
 
 }
-  }
+
+@media screen and (min-width: 600px) { 
+footer {
+  justify-content: center ;
+  display: grid;
+  align-content: space-evenly;
+}
+footer a {
+  text-decoration: none;
+  color: white;
+}
+.logosFooter {
+  justify-content: space-between;
+}
+}
+
