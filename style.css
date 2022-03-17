@@ -209,6 +209,9 @@ header img {
   transition-duration: .25s;
 }
 
+.desktopMenu{
+  display: none;
+}
 
 
 
@@ -319,6 +322,7 @@ section.filter{
   justify-content: space-evenly;
   margin-bottom: 2vw;
   font-size: var(--font-size-h1);
+
 }
 
 
@@ -368,14 +372,14 @@ input.send{
       margin-left:var(--marginSection);
       margin-right:var(--marginSection);
       }
-    .dropDownMenu{
-      display: none;
-    }
     main img {
       padding: 0;
       margin: 0;
       width: 40vw;
       box-shadow: 10px 10px 5px #073B4C;
+    }
+    .menuBurger{
+      display:none;
     }
   }
 
