@@ -19,7 +19,7 @@
     --color-font-footer: #f5e5e5;
   /*paragraph variable*/
     --font-color-paragraph: yellow;
-    --font-size-paragraph:3.052rem;
+    --font-size-paragraph:1.25rem;
   /*tittle vararible*/ 
     --font-color-title:red;
     --paddingSection:1vw;
@@ -27,9 +27,17 @@
     --marginForm:15vw;
     --marginMessage:-10vw;
   /*h1*/
-    --font-size-h1:2.3rem;
+    --font-size-h1:2.441rem;
+  
+  
+  /*h2*/
+  --font-size-h2:1.953rem;
   margin:0;
   padding:0;
+  
+    margin:0;
+  padding:0;
+
 
 }
 /*general config*/
@@ -69,7 +77,7 @@ h1, h2, h3, h4, h5 {
     margin-bottom: 2vw;
   }
   
-  h2 {font-size: 2.441rem;}
+  h2 {font-size: var(--font-size-h2);}
   
 
   
@@ -287,6 +295,7 @@ main{
   flex-direction: column;
   width: 99%;
   margin:auto;
+
 }
 main img{
   padding: 0;
@@ -294,6 +303,14 @@ main img{
   width: 70vw;
   box-shadow: 10px 10px 5px #073B4C;
 }
+
+main h2 {
+border:1px solid red;
+  display: flex;
+  justify-content: flex-start;
+  width: 90%;
+}
+
 
 /*index.html*/
 
@@ -314,16 +331,6 @@ input.btnradio:hover{
    background-color: #F76D6D;
 }
 
-/*galerie*/
-
-section.filter{
-  width: 60vw;
-  display: flex;
-  justify-content: space-evenly;
-  margin-bottom: 2vw;
-  font-size: var(--font-size-h1);
-
-}
 
 
 /*presentation*/
@@ -421,20 +428,55 @@ input.send{
 
 
 
+/*galerie*/
 
+section.filter{
+  width: 90%;
+  display: flex;
+  justify-content: flex-start;
+  font-size: var(--font-size-paragraph);
+  margin:0;
+  padding:0;
+  
+}
+section.filter form{
+  
 
+ 
+  margin-left:1vw;
+  padding:10px;
+  
+}
+.galery h2{
+justify-content:left;
 
+}
 
 .cardProject1, .cardProject2 {
-  border : 1px solid red;
   display : flex;
-  
   width:90%;
-  /* margin:var(--marginSection);
-  padding:var(--paddingSection); */
+  padding:var(--paddingSection); 
   }
   
-  
+  .galery img{
+    object-fit: cover;
+   
+    }
+    
+  .galery .descriptionWildProject{
+      padding-left:var(--paddingSection); 
+
+  }
+
+  .descriptionWildProject h2{
+    padding-left:var(--paddingSection);
+  }
+
+.descriptionWildProject p{
+padding-left:var(--paddingSection); 
+font-size: var(--font-size-paragraph);
+}
+
   @media screen and (min-width: 375px) {
   .cardProject2 {
   /* En desktop, on veut que sur les lignes impaires, le texte soit à gauche de la photo - on ne veut pas cet effet en mobile
@@ -514,3 +556,4 @@ footer li{
   font-size: 20px;
 
 }
+  }
