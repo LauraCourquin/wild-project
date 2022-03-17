@@ -515,7 +515,7 @@ footer li{
   font-size: 20px;
 
 }
-@media screen and (min-width: 375px) { 
+@media screen and (min-width: 700px) { 
   .footer {
     background-color: var(--color-bg-footer);
     height: 100px;
