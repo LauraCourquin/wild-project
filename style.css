@@ -515,17 +515,20 @@ footer li{
   font-size: 20px;
 
 }
-@media screen and (min-width: 600px) { 
-footer {
-  justify-content: center ;
-  display: grid;
-  align-content: space-evenly;
-}
-footer a {
-  text-decoration: none;
-  color: white;
-}
-.logosFooter {
-  justify-content: space-between;
-}
+@media screen and (min-width: 375px) { 
+  .footer {
+    background-color: var(--color-bg-footer);
+    height: 100px;
+    color: white;
+  }
+
+  .footerUl {
+    display: flex;
+    justify-content: center;
+    margin-top: 1em;
+  }
+
+  .footer li {
+    margin-right: 1em;
+  }
 }
