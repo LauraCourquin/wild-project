@@ -33,33 +33,39 @@
     </header>
     <main>
         <h1>Partagez-nous votre besoin</h1>
-        <form class="contact" action="">
+        <form class="contactForm" action="">
             <div class="form">
-                <label for="Prénom">Prénom:</label>
-                <input 
-                    type="text"
-                    placeholder="Entrez votre prénom..."
-                />
-                <label for="name">Nom:</label>
-                <input 
-                    type="text"
-                    placeholder="Entrez votre nom..."
-                />
-                <label for="société">Société:</label>
-                <input 
-                    type="text"
-                    placeholder="Votre société..."
-                />
-                <label for="email">E-mail:</label>
-                <input 
-                    type="email"
-                    placeholder="Entrez un e-mail de contact"
-                />
-                <label for="téléphone">Numéro de téléphone:</label>
-                <input 
-                    type="number"
-                    placeholder="Entrez un numéro de Contact"
-                />
+                <div class="personn">
+                    <label for="name">Prénom:</label><br>
+                    <input 
+                        type="text"
+                        placeholder="Votre prénom..."
+                    />
+                    <label class="lastname" for="lastname">Nom:</label>
+                    <input class="lastname" 
+                        type="text"
+                        placeholder="Votre nom..."
+                    />
+                </div>
+                <div class="enterprise">
+                    <label for="société">Société:</label>
+                    <input 
+                        type="text"
+                        placeholder="Votre société..."
+                    />
+                </div>
+                <div class="contact">
+                    <label for="email">E-mail:</label>
+                    <input 
+                        type="email"
+                        placeholder="name@mail.com"
+                    />
+                    <label for="Téléphone">tel:</label>
+                    <input 
+                        type="text"
+                        placeholder="+33"
+                    />
+                </div>
             </div>
             <label for="message">Message:</label>
             <textarea class="message" name="message"></textarea>

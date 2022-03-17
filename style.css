@@ -24,7 +24,7 @@
     --font-color-title:red;
     --paddingSection:1vw;
     --marginSection:12vw;
-    --marginForm:15vw;
+    --marginForm:0vw;
     --marginMessage:-10vw;
   /*h1*/
     --font-size-h1:2.441rem;
@@ -70,9 +70,9 @@ h1, h2, h3, h4, h5 {
   margin-top: 0;
   margin-bottom: 0;
   font-size: var(--font-size-h1);
-  
-  /*font-size: var(--font-size-paragraph);*/
   }
+  /*font-size: var(--font-size-paragraph);*/
+
   p{
     margin-bottom: 2vw;
   }
@@ -337,27 +337,30 @@ input.btnradio:hover{
 
 /*contact.html*/
 
-form.contact{
+form.contactForm{
   display: flex;
   flex-direction: column;
+  justify-content: center;
   align-items: center;
   margin-left: var(--marginForm);
   margin-right: var(--marginForm);
-  border: blue solid 1px;
+  height: 75vh;
+  width: 75vw;
+  margin-bottom: 10rem;
+
 }
 div.form{
   display:flex;
+  width: 50vw;
+  height: auto;
   flex-direction: column;
-  flex-wrap: wrap;
-  border: blue solid 1px;
 }
 
 textarea.message{
   margin-left: var(--marginMessage);
   margin-right: var(--marginMessage);
-  height: 10vw;
-  border: blue solid 1px;
-
+  height: 20vh;
+  width: 42vw;
 }
 
 input.send{
@@ -388,6 +391,32 @@ input.send{
     .menuBurger{
       display:none;
     }
+/*formulaire de contact*/
+    div.form{
+      display:flex;
+      width: 50vw;
+      height: auto;
+      flex-direction: column;
+    }
+    
+    div.personn{
+      display: flex;
+      justify-content: space-evenly;
+      margin: 1rem;
+    }
+    
+    div.enterprise{
+      display: flex;
+      justify-content: center;
+      margin: 1rem;
+    }
+    
+    div.contact{
+      display: flex;
+      justify-content: space-evenly;
+      margin: 1rem;
+    }
+    
   }
 
 
