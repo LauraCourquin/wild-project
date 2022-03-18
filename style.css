@@ -240,6 +240,12 @@ header img {
     font-size: 30px;
     font-style: bold;
   }
+  .buttonProject {
+    padding: 1vh;
+    background-color: #1173ae;
+    border-color: #1173ae;
+    border-radius: 50px;
+  }
 }
 
 
