@@ -139,6 +139,10 @@ header{
   font-size: var(--font-size-nav);
   color : var(--color-font-nav);
   display: flex;
+  position: fixed;
+  top: 0;
+  width: 75%;
+  height: auto;
 }
 
 header img {
@@ -148,9 +152,6 @@ header img {
   margin: 1em;
 }
 
-.titleNav h2 {
-  fon
-}
 
 #menuToogle {
   opacity: 0;
