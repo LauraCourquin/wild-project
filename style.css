@@ -145,7 +145,7 @@ header img {
   width: auto;
   height: 5vw;
   max-height: 200px;
-  margin-left: 35vh;
+  margin-left: 2vh;
   margin-top: 1vh;
 }
 
@@ -177,7 +177,7 @@ header img {
   align-items: center;
   position: fixed;
   top: 3px;
-  left: 20px;
+  right: 20px;
   width: 26px;
   height: 26px;
   z-index: 1;
@@ -232,6 +232,10 @@ header img {
     top: 0;
     width: 75%;
     height: auto;
+  }
+
+  .header img {
+    margin-left: 11vh;
   }
   .desktopMenu {
     display: flex;
