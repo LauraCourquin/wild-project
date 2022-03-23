@@ -145,14 +145,12 @@ header img {
   width: auto;
   height: 5vw;
   max-height: 200px;
-  margin: 1em;
-}
-
-.titleNav h2 {
-  fon
+  margin-left: 35vh;
+  margin-top: 1vh;
 }
 
 #menuToogle {
+  left: 20px;
   opacity: 0;
 }
 
@@ -178,8 +176,8 @@ header img {
   display: flex;
   align-items: center;
   position: fixed;
-  top: 10px;
-  right: 20px;
+  top: 3px;
+  left: 20px;
   width: 26px;
   height: 26px;
   z-index: 1;
@@ -205,13 +203,13 @@ header img {
   position: fixed;
   visibility: hidden;
   top: 0;
-  right: 0;
-  width: 200px;
+  left: 0;
+  width: 100%;
   height: auto;
   margin: 0;
   padding: 80px 0;
   list-style: none;
-  background-color: #ECEFF1;
+  background-color: #ed6c6d;
   box-shadow: 1px 0px 6px rgba(0, 0, 0, .2);
   transition-duration: .25s;
 }
@@ -229,6 +227,12 @@ header img {
 }
 
 @media screen and (min-width:700px) {
+  .header {
+    position: fixed;
+    top: 0;
+    width: 75%;
+    height: auto;
+  }
   .desktopMenu {
     display: flex;
     justify-content: space-around;
@@ -239,6 +243,13 @@ header img {
     font-size: 30px;
     font-style: bold;
   }
+  .buttonProject {
+    padding: 1vh;
+    background-color: #1173ae;
+    border-color: #1173ae;
+    border-radius: 50px;
+  }
+  
 }
 
 
@@ -315,13 +326,12 @@ main{
   flex-direction: column;
   width: 99%;
   margin:auto;
-
-padding-top:3rem;
-padding-bottom:3rem;
-margin-top:0;
-background:   url(./assets/Image_FondBlured.png) no-repeat center center fixed;
-
+  padding-top:3rem;
+  padding-bottom:3rem;
+  margin-top:0;
+  background: url(./assets/Image_FondBlured.png) no-repeat center center fixed;
 }
+
 
 
 /*media query pour enlever l'image de fond sur version mobile*/
