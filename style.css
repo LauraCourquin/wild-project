@@ -453,6 +453,7 @@ input.send{
       width: 50vw;
       height: auto;
       flex-direction: column;
+
     }
 
     label {
