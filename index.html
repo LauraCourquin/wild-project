@@ -33,21 +33,40 @@
     </header>
     <main>
         <div class="introIndex">
-        <p>Bienvenue sur le portail des projets finaux de nos wilders. 
-            Decouvrez comment, grace aux pouvoirs de leur chaussettes,
+            <p>Bienvenue sur le portail des projets finaux de nos wilders. 
+                Decouvrez comment, grace aux pouvoirs de leur chaussettes,
 
-            ils ont exprimé leurs talents créatifs et techniques.
-        </p>
+                ils ont exprimé leurs talents créatifs et techniques.
+            </p>
+        </div>       
+<!-- caroussel container -->
+<div class="caroussel">
+
+    <!-- images link plus galery-->
+    <div class="slide fade">
+        <a href="galerie.html"><img src="./assets/Ferme_voliere.png"></a>
     </div>
-        <a href="galerie.html"><img src="./assets/Ferme_voliere.png" alt="image test">
-       
-       
-        
-        <div class="radio">
-            <input class="btnradio" type="radio" name="">
-            <input class="btnradio" type="radio" name="">
-            <input class="btnradio" type="radio" name="">
-        </div>
+  
+    <div class="slide fade">
+        <a href="galerie.html"><img src="./assets/Made4Spitch.png"></a>
+    </div>
+  
+    <div class="slide fade">
+        <a href="galerie.html"><img src="./assets/Retrofit.png"></a>
+    </div>
+  
+    <!-- button next and previous  -->
+    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1)">&#10095;</a>  
+</div>
+  <br>
+  
+  <!-- The dots/circles -->
+  <div style="text-align:center">
+    <span class="dot" onclick="currentSlide(1)"></span>
+    <span class="dot" onclick="currentSlide(2)"></span>
+    <span class="dot" onclick="currentSlide(3)"></span>
+  </div>
     </main>
     <footer>
         <div class="footer"> 
@@ -78,6 +97,7 @@
              <li>contact</li>
          </ul> 
         </div>
-     </footer>
+    </footer>
+    <script src="caroussel.js"></script>
 </body>
 </html>
