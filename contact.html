@@ -11,7 +11,7 @@
 </head>
 <body>
     <header>
-        <img src="./assets/logo-wild-code-school-white.png"alt="logo wild code school">
+        <a href="./index.html"><img src="./assets/logo-wild-code-school-white.png"alt="logo wild code school"></a>
         <nav>
           <div class="menuBurger">
             <input id="menuToogle" type="checkbox">
@@ -25,44 +25,54 @@
                     <li>
                       <li><a href="galerie.html">Galerie</a></li>
                       <li><a href="presentation.html">Qui sommes nous </a></li>
-                      <li><a href="contact.html"> Vous avez un projet ?</a></li> -->
+                      <li><button type="button" class="buttonProject"><a href="contact.html">Vous avez un projet ?</a></button></li>
                     </li>
                 </ul>                   
             </ul>
         </nav>
     </header>
     <main>
-        <h1>Partagez-nous votre besoin</h1>
-        <form class="contact" action="">
+        <h2>Parce que c'est votre projet !!!</h2>
+        <form class="contactForm" action="">
             <div class="form">
-                <label for="Prénom">Prénom:</label>
-                <input 
-                    type="text"
-                    placeholder="Entrez votre prénom..."
-                />
-                <label for="name">Nom:</label>
-                <input 
-                    type="text"
-                    placeholder="Entrez votre nom..."
-                />
-                <label for="société">Société:</label>
-                <input 
-                    type="text"
-                    placeholder="Votre société..."
-                />
-                <label for="email">E-mail:</label>
-                <input 
-                    type="email"
-                    placeholder="Entrez un e-mail de contact"
-                />
-                <label for="téléphone">Numéro de téléphone:</label>
-                <input 
-                    type="number"
-                    placeholder="Entrez un numéro de Contact"
-                />
+                <fieldset>
+                    <label for="name">
+                        Prénom:
+                        <input class="field" type="text" id="name"
+                        placeholder="Votre prénom..." />
+                    </label>
+                    <label for="lastname">
+                        Nom:
+                        <input class="field" type="text" id="lastname"
+                        placeholder="Votre nom..." />
+                    </label>
+                </fieldset>
+                <fieldset>
+                    <label for="société">
+                        Société:
+                        <input class="field" type="text" id="société"
+                        placeholder="Votre Société..." />
+                    </label>
+                </fieldset>
+                <fieldset>
+                    <label for="email">
+                        E-mail:
+                        <input class="field" type="email" id="email"
+                        placeholder="name@mail.com" />
+                    </label>
+                    <label for="Téléphone">
+                        Téléphone:
+                        <input class="field" type="text" id="téléphone"
+                        placeholder="+33" />
+                    </label>
+                </fieldset>
             </div>
-            <label for="message">Message:</label>
-            <textarea class="message" name="message"></textarea>
+            <fieldset>
+                <label for="message">
+                    Message:
+                    <textarea name="message" id="message" placeholder="Votre message ici..."></textarea>
+                </label>
+            </fieldset>
             <input class="send" type="submit" value="Envoyer" />
         </form>
     </main>

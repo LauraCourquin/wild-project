@@ -19,17 +19,24 @@
     --color-font-footer: #f5e5e5;
   /*paragraph variable*/
     --font-color-paragraph: yellow;
-    --font-size-paragraph:3.052rem;
+    --font-size-paragraph:1rem;
   /*tittle vararible*/ 
     --font-color-title:red;
     --paddingSection:1vw;
     --marginSection:12vw;
-    --marginForm:15vw;
+    --marginForm:0vw;
     --marginMessage:-10vw;
   /*h1*/
-    --font-size-h1:2.3rem;
+    --font-size-h1:1rem;
+  
+  
+  /*h2*/
+  --font-size-h2:1.953rem;
   margin:0;
   padding:0;
+  
+
+
 
 }
 /*general config*/
@@ -53,7 +60,7 @@ header, nav, footer{
 h1, h2, h3, h4, h5 {
   margin: 3rem 0 1.38rem;
   font-family: var(font-size);
-  font-weight: 400;
+
   line-height: var(--line-height-general);
   color:var(--color-font-title);
   }
@@ -62,14 +69,14 @@ h1, h2, h3, h4, h5 {
   margin-top: 0;
   margin-bottom: 0;
   font-size: var(--font-size-h1);
-  
-  /*font-size: var(--font-size-paragraph);*/
   }
+  /*font-size: var(--font-size-paragraph);*/
+
   p{
     margin-bottom: 2vw;
   }
   
-  h2 {font-size: 2.441rem;}
+  h2 {font-size: var(--font-size-h2);}
   
 
   
@@ -84,7 +91,11 @@ h1, h2, h3, h4, h5 {
   
 
 
+a:hover{
 
+opacity: 0.7;
+
+}
 
 
 
@@ -134,10 +145,12 @@ header img {
   width: auto;
   height: 5vw;
   max-height: 200px;
-  margin: 1em;
+  margin-left: 35vh;
+  margin-top: 1vh;
 }
 
 #menuToogle {
+  left: 20px;
   opacity: 0;
 }
 
@@ -163,8 +176,8 @@ header img {
   display: flex;
   align-items: center;
   position: fixed;
-  top: 10px;
-  right: 70px;
+  top: 3px;
+  left: 20px;
   width: 26px;
   height: 26px;
   z-index: 1;
@@ -190,13 +203,13 @@ header img {
   position: fixed;
   visibility: hidden;
   top: 0;
-  /* left: -100%; */
-  width: 200px;
+  left: 0;
+  width: 100%;
   height: auto;
   margin: 0;
   padding: 80px 0;
   list-style: none;
-  background-color: #ECEFF1;
+  background-color: #ed6c6d;
   box-shadow: 1px 0px 6px rgba(0, 0, 0, .2);
   transition-duration: .25s;
 }
@@ -211,6 +224,32 @@ header img {
 
 .desktopMenu{
   display: none;
+}
+
+@media screen and (min-width:700px) {
+  .header {
+    position: fixed;
+    top: 0;
+    width: 75%;
+    height: auto;
+  }
+  .desktopMenu {
+    display: flex;
+    justify-content: space-around;
+  }
+  .desktopMenu a {
+    text-decoration: none;
+    color: white;
+    font-size: 30px;
+    font-style: bold;
+  }
+  .buttonProject {
+    padding: 1vh;
+    background-color: #1173ae;
+    border-color: #1173ae;
+    border-radius: 50px;
+  }
+  
 }
 
 
@@ -287,13 +326,47 @@ main{
   flex-direction: column;
   width: 99%;
   margin:auto;
+  padding-top:3rem;
+  padding-bottom:3rem;
+  margin-top:0;
+  background: url(./assets/Image_FondBlured.png) no-repeat center center fixed;
 }
+
+
+
+/*media query pour enlever l'image de fond sur version mobile*/
+
+@media screen and (max-width: 700px) { 
+
+  main  {
+    background: none;
+ 
+  }
+ 
+}
+
+
+
 main img{
   padding: 0;
   margin: 0;
   width: 70vw;
   box-shadow: 10px 10px 5px #073B4C;
+   border-radius: 5%;
 }
+
+main h2 {
+
+  display: flex;
+  justify-content: flex-start;
+  width: 90%;
+  padding-top:0;
+  margin-top:0;
+  /* border:10px solid #06D6A0;
+  box-shadow: 10px 10px 5px #06D6A0;
+  border-radius: 30%;; */
+}
+
 
 /*index.html*/
 
@@ -314,50 +387,52 @@ input.btnradio:hover{
    background-color: #F76D6D;
 }
 
-/*galerie*/
-
-section.filter{
-  width: 60vw;
-  display: flex;
-  justify-content: space-evenly;
-  margin-bottom: 2vw;
-  font-size: var(--font-size-h1);
-
-}
 
 
 /*presentation*/
 
 /*contact.html*/
 
-form.contact{
+form.contactForm{
   display: flex;
   flex-direction: column;
+  justify-content: center;
   align-items: center;
   margin-left: var(--marginForm);
   margin-right: var(--marginForm);
-  border: blue solid 1px;
+  height: 75vh;
+  width: 75vw;
+  margin-bottom: 10rem;
+
 }
 div.form{
   display:flex;
+  width: 50vw;
+  height: auto;
   flex-direction: column;
-  flex-wrap: wrap;
-  border: blue solid 1px;
 }
 
-textarea.message{
+label textarea{
   margin-left: var(--marginMessage);
   margin-right: var(--marginMessage);
-  height: 10vw;
-  border: blue solid 1px;
+  height: 20vh;
+  width: 50vw;
+} 
+fieldset label textarea{
+  display:flex;
+  flex-direction: column;
+}
 
+input.field, input.send, textarea{
+  border:none;
+  border-radius: 5%;
+  box-shadow: 4px 4px 4px #073B4C;
+  background-color: #ddd;
 }
 
 input.send{
-  margin-top: 2vw;
-  margin-bottom:2vw;
-  width: 5vw;
-  border: blue solid 1px;
+  margin-top: 4vw;
+  width: 20vw;
 }
 
 /*media query*/
@@ -376,11 +451,58 @@ input.send{
       padding: 0;
       margin: 0;
       width: 40vw;
-      box-shadow: 10px 10px 5px #073B4C;
+   
     }
     .menuBurger{
       display:none;
     }
+
+/*formulaire de contact*/
+    form{
+      display:flex;
+      width: 50vw;
+      height: auto;
+      flex-direction: column;
+    }
+
+    label {
+      display:flex;
+      flex-direction: column;
+      
+    }
+    fieldset {
+      display:flex;
+      justify-content: space-between;
+      margin-top: 0.2rem;
+      margin-bottom: 0.005rem;
+    }
+
+    label textarea{
+      margin-left: var(--marginMessage);
+      margin-right: var(--marginMessage);
+      height: 20vh;
+      width: 30vw;
+    } 
+
+    div.form{
+      display:flex;
+      width: 30vw;
+      height: auto;
+      flex-direction: column;
+      margin-bottom: 2rem;
+    }
+    
+    input.field, input.send, textarea{
+      background-color: #ddd;
+      border:none;
+      border-radius: 5%;
+      box-shadow: 4px 4px 4px #073B4C;
+    }
+
+    input.send{
+      margin-top: 2vw;
+      width: 5vw;
+    }
   }
 
 
@@ -416,26 +538,89 @@ input.send{
 
 
 
+/*galerie*/
+
+section.filter{
+  width: 90%;
+  display: flex;
+  justify-content: flex-start;
+  font-size: var(--font-size-paragraph);
+  margin:0;
+  padding:0;
+  
+}
+section.filter form{
+  
+
+ 
+  margin-left:1vw;
+  padding:10px;
+  
+}
 
 
 
+main h2{
+justify-content:left;
 
-
-
-
-
+}
 
 .cardProject1, .cardProject2 {
-  border : 1px solid red;
   display : flex;
-  
   width:90%;
-  /* margin:var(--marginSection);
-  padding:var(--paddingSection); */
+  padding:var(--paddingSection); 
   }
   
+  main img {
+    object-fit: fill;  
+    /* aspect-ratio: 16/9; */
+    width:30vw ;
+   max-height:40vh
+ 
+    }
+
+/*La classe .introIndex ert à gérer le bloc central (texte d'intro + image + descr) sur la page d'accueil*/
+
+main .introIndex{
+width:50vw;
+
+}
+
+
+
+
+
+
+    @media screen and (max-width: 700px) {
+      main img {
+      
+        width:60vw ;
+     
+     
+        }
+    
+      }
+
+    
+  main .descriptionWildProject, .quiSommesNousParaph{
+      padding-left:var(--paddingSection); 
+
+  }
+  .descriptionWildProject, .quiSommesNousParaph{
   
-  @media screen and (min-width: 375px) {
+
+  } 
+
+
+  .descriptionWildProject h3, .quiSommesNousParaph h3{
+    padding:0;
+    margin:0;
+
+
+  } 
+
+
+  @media screen and (min-width: 700px) {
   .cardProject2 {
   /* En desktop, on veut que sur les lignes impaires, le texte soit à gauche de la photo - on ne veut pas cet effet en mobile
   */
@@ -443,7 +628,7 @@ input.send{
   flex-wrap: nowrap;
   }
   }
-  @media screen and (max-width: 375px) {
+  @media screen and (max-width: 700px) {
   .cardProject1, .cardProject2 {
   /* En mobile, on veut que le texte aille sous la photo (wrap)
   */
@@ -487,7 +672,8 @@ footer{
     justify-content: space-between;
     align-items: flex-end;
     height: 80px;
-    width: auto;
+    width: auto; 
+      }
 }
 
 footer a {
@@ -514,3 +700,22 @@ footer li{
   font-size: 20px;
 
 }
+
+@media screen and (min-width: 700px) { 
+  .footer {
+    background-color: var(--color-bg-footer);
+    height: 100px;
+    color: white;
+  }
+
+  .footerUl {
+    display: flex;
+    justify-content: center;
+    margin-top: 1em;
+  }
+
+  .footer li {
+    margin-right: 1em;
+  }
+}
+
