@@ -392,6 +392,8 @@ main h2 {
 
 /* button next and previous */
   .prev, .next {
+    background-color: transparent;
+    border: none;
     cursor: pointer;
     position: absolute;
     top: 50%;
@@ -490,6 +492,14 @@ input.send{
   width: 20vw;
 }
 
+input#uploads {
+  display:none;
+}
+
+label.upload {
+  display:none;
+}
+
 /*media query*/
 
   @media screen and (min-width: 700px) { 
@@ -559,6 +569,16 @@ input.send{
       margin-top: 2vw;
       width: 5vw;
     }
+
+    input#uploads {
+      display:block;
+    }
+    
+    label.upload {
+      display:block;
+      margin-top: 1rem;
+    }
+    
   }
 
 
