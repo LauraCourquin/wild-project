@@ -35,17 +35,23 @@ if (i%2===0) newDivProject.classList.add("cardProject1");
 let newImgProject = document.createElement('img');
 newImgProject.src = `${projects[i].imgUrl}`;
 
+//cette balise englobe newTitleProject et newDescrProject et permet de créer un bloc (donc que le titre ne flotte pas à  côté de la descr)
+let newDivProjectDescr = document.createElement('div');
+newDivProjectDescr.classList.add("descriptionWildProject");
+
+
 let newTitleProject = document.createElement('h3');
-newTitleProject.classList.add("descriptionWildProject");
 newTitleProject.innerHTML = `${projects[i].name}`;
 
 let newDescrProject = document.createElement('p');
-newDescrProject.classList.add("descriptionWildProject");
 newDescrProject.innerHTML = `${projects[i].descr}`;
+//on ajoute newTitleProject et newDescrProject a newDivProjectDescr
+newDivProjectDescr.appendChild(newTitleProject);
+newDivProjectDescr.appendChild(newDescrProject );
+
 
 newDivProject.appendChild(newImgProject);
-newDivProject.appendChild(newTitleProject);
-newDivProject.appendChild(newDescrProject );
+newDivProject.appendChild(newDivProjectDescr);
 //on affiche la nouvelle div projet créée sous main
 main.appendChild(newDivProject);
 
