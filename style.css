@@ -563,6 +563,7 @@ section.filter form{
 main h2{
 justify-content:left;
 
+
 }
 
 .cardProject1, .cardProject2 {
@@ -606,16 +607,17 @@ width:50vw;
       padding-left:var(--paddingSection); 
 
   }
-  .descriptionWildProject, .quiSommesNousParaph{
-  
-
-  } 
+ 
 
 
   .descriptionWildProject h3, .quiSommesNousParaph h3{
     padding:0;
     margin:0;
 
+  } 
+  .descriptionWildProject p{
+    padding:0;
+    margin:0;
 
   } 
 
