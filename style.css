@@ -57,7 +57,7 @@ header, nav, footer{
 }
 
 
-h1, h2, h3, h4, h5 {
+h1, h2, h3 {
   margin: 3rem 0 1.38rem;
   font-family: var(font-size);
 
@@ -83,9 +83,6 @@ h1, h2, h3, h4, h5 {
 
   h3 {font-size: 1.953rem;}
 
-  h4 {font-size: 1.563rem;}
-
-  h5 {font-size: 1.25rem;}
 
 
   small, .text_small {font-size: 0.8rem;}
@@ -354,7 +351,7 @@ main img{
   object-fit: fill;
   padding: 0;
   margin: 0;
-  box-shadow: 10px 10px 5px #073B4C;
+  box-shadow: 7px 7px 10px #073B4C;
   border-radius: 5%;
   width: 70vw;
   min-height:22vh;
@@ -486,11 +483,11 @@ fieldset label textarea{
   flex-direction: column;
 }
 
-input.field, input.send, textarea{
+input.field, input.send,textarea {
   border:none;
   border-radius: 5%;
   box-shadow: 4px 4px 4px #073B4C;
-  background-color: #ddd;
+  background-color: #eee;
 }
 
 input.send{
@@ -601,15 +598,9 @@ label.upload {
       margin-bottom: 2rem;
     }
 
-    input.field, input.send, textarea{
-      background-color: #ddd;
-      border:none;
-      border-radius: 5%;
-      box-shadow: 4px 4px 4px #073B4C;
-    }
-
     input.send{
       margin-top: 2vw;
+      height: 3vh;
       width: 5vw;
     }
 
