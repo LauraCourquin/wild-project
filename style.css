@@ -27,8 +27,8 @@
     --marginForm:0vw;
     --marginMessage:-10vw;
   /*h1*/
-    --font-size-h1:1rem;
-
+    --font-size-h1:5rem;
+    --font-size-h1-mobile:3rem;
 
   /*h2*/
   --font-size-h2:1.953rem;
@@ -57,7 +57,7 @@ header, nav, footer{
 }
 
 
-h1, h2, h3, h4, h5 {
+h1, h2, h3 {
   margin: 3rem 0 1.38rem;
   font-family: var(font-size);
 
@@ -68,7 +68,8 @@ h1, h2, h3, h4, h5 {
   h1 {
   margin-top: 0;
   margin-bottom: 0;
-  font-size: var(--font-size-h1);
+  font-size: var(--font-size-h1-mobile);
+  font-weight: bolder;
   }
   /*font-size: var(--font-size-paragraph);*/
 
@@ -82,9 +83,6 @@ h1, h2, h3, h4, h5 {
 
   h3 {font-size: 1.953rem;}
 
-  h4 {font-size: 1.563rem;}
-
-  h5 {font-size: 1.25rem;}
 
 
   small, .text_small {font-size: 0.8rem;}
@@ -349,30 +347,35 @@ main{
 
 }
 
-
-
 main img{
+  object-fit: fill;
   padding: 0;
   margin: 0;
+  box-shadow: 7px 7px 10px #073B4C;
+  border-radius: 5%;
   width: 70vw;
-  box-shadow: 10px 10px 5px #073B4C;
-   border-radius: 5%;
+  min-height:22vh;
+  max-height:50vh;
 }
 
 main h2 {
-
   display: flex;
   justify-content: flex-start;
   width: 90%;
   padding-top:0;
   margin-top:0;
-  /* border:10px solid #06D6A0;
-  box-shadow: 10px 10px 5px #06D6A0;
-  border-radius: 30%;; */
 }
 
 
 /*index.html*/
+
+.introIndexpc{
+  display:none;
+}
+
+.introIndexmobile{
+  width:57vw;
+}
 
 /*caroussel*/
 
@@ -425,6 +428,7 @@ main h2 {
     height: 15px;
     width: 15px;
     margin: 0 2px;
+    margin-top: 2rem;
     background-color: #bbb;
     border-radius: 50%;
     display: inline-block;
@@ -459,7 +463,6 @@ form.contactForm{
   margin-right: var(--marginForm);
   height: 75vh;
   width: 75vw;
-  margin-bottom: 10rem;
 
 }
 div.form{
@@ -480,11 +483,11 @@ fieldset label textarea{
   flex-direction: column;
 }
 
-input.field, input.send, textarea{
+input.field, input.send,textarea {
   border:none;
   border-radius: 5%;
   box-shadow: 4px 4px 4px #073B4C;
-  background-color: #ddd;
+  background-color: #eee;
 }
 
 input.send{
@@ -512,13 +515,44 @@ label.upload {
       margin-left:var(--marginSection);
       margin-right:var(--marginSection);
       }
+
     main img {
       padding: 0;
       margin: 0;
-      width: 40vw;
-
+      width: 30vw;
+      min-height: 25vh;
+      max-height:25vh;
     }
+
+    .slideImg {
+      padding: 0;
+      margin: 0;
+      width: 45vw;
+      min-height: 40vh;
+      max-height:40vh;
+    }
+
     .menuBurger{
+      display:none;
+    }
+
+    h1 {
+      margin-top: 0;
+      margin-bottom: 0;
+      font-size: var(--font-size-h1);
+      font-weight: bolder;
+      }
+
+    .introIndexpc{
+      font-weight: bold;
+      font-size: 1.2rem;
+      display:flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .introIndexmobile{
       display:none;
     }
 
@@ -531,11 +565,17 @@ label.upload {
 
     }
 
-    label {
+    form label {
       display:flex;
       flex-direction: column;
+      font-weight: bold;
 
     }
+    input.field{
+      height: 3vh;
+      width: 13vw;
+    }
+
     fieldset {
       display:flex;
       justify-content: space-between;
@@ -558,15 +598,9 @@ label.upload {
       margin-bottom: 2rem;
     }
 
-    input.field, input.send, textarea{
-      background-color: #ddd;
-      border:none;
-      border-radius: 5%;
-      box-shadow: 4px 4px 4px #073B4C;
-    }
-
     input.send{
       margin-top: 2vw;
+      height: 3vh;
       width: 5vw;
     }
 
@@ -647,36 +681,6 @@ justify-content:left;
   width:90%;
   padding:var(--paddingSection);
   }
-
-  main img {
-    object-fit: fill;
-    /* aspect-ratio: 16/9; */
-    width:30vw ;
-   max-height:40vh
-
-    }
-
-/*La classe .introIndex ert à gérer le bloc central (texte d'intro + image + descr) sur la page d'accueil*/
-
-main .introIndex{
-width:50vw;
-
-}
-
-
-
-
-
-
-    @media screen and (max-width: 700px) {
-      main img {
-
-        width:60vw ;
-
-
-        }
-
-      }
 
 
   main .descriptionWildProject, .quiSommesNousParaph{
@@ -888,12 +892,14 @@ color: black;
   padding: 20px;
   border: 1px solid rgb(43, 42, 42);
   width: 80%; /* Could be more or less, depending on screen size */
+  display: flex;
+  justify-content: space-between;
+  flex-direction: inherit;
 }
 
 .modal-content img {
-  width: 300px;
+  width: 180px;
   height: auto;
-  margin-right: 16vh;
   border-radius: 50%;
 }
 
@@ -910,6 +916,10 @@ color: black;
   color: red;
   text-decoration: none;
   cursor: pointer;
+}
+
+span.close {
+  position: absolute;
 }
 }
 

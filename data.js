@@ -11,7 +11,7 @@ const projects = [
       id: 2,
       name : 'Speeker',
       descr : 'La 1ère plateforme dédiée à la prise de parole en public',
-      imgUrl : "./assets/Made4Spitch.png",
+      imgUrl : "./assets/Retrofit.png",
       techno : 'Angular' ,
       theme : 'social',
     },

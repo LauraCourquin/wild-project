@@ -9,7 +9,6 @@
     <link rel="stylesheet" href="style.css">
     <title>Gallery</title>
 </head>
-  
 <body>
     <header>
         <a href="./index.html"><img src="./assets/wild-project.png"alt="logo wild code school"></a>        <nav>
@@ -37,26 +36,16 @@
     <section class="filter">
 
         <form>
-            <label for="Thématiques">Thématiques:</label><br>
-            <select name="Thématiques" taille="1">
-                <option>défaut
-                <option>environnement
-                <option>e-commerce
-                <option>social
-
-            </select>
+        <label for="Thématiques">Thématiques:</label><br>
+        <select name="Thématiques" id="Thématiques" >
+            <option value="TOUS">Tous</option>
+            <option value="e-commerce">e-commerce</option>
+            <option value="social">social</option>
+        </select>
         </form>
-        <form>
-            <label for="Technologies">Technologies:</label><br>
-            <select name="Technologies" taille="1">
-                <option>défaut
-                <option>Javascript
-                <option>PHP
-                <option>Angular
-                <option>React
-            </select>
-        </form>
+       
     </section>
+    <section id="list"></section>
     
     </main>
     <footer>
@@ -109,7 +98,7 @@
                      </div>  
                  </div>
                  <div class="pictureProfile">
-                     <img src="./assets/julianne.jpeg"/>
+                    <img src="./assets/ju_profil.jpg"/>
                      <div class ="link">
                          <a href="https://www.linkedin.com/in/juliane-casier-bb642832/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
                          <a href="https://github.com/ilalande/ " target="_blank"><i class="fa-brands fa-github"></i></a>
