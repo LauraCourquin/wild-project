@@ -5,7 +5,7 @@
   /* general variable*/
     --color-bg-general: #f5e5e5;
     --font-size-general: 1rem;
-    --color-font-general: #073B4C; 
+    --color-font-general: #073B4C;
     --font-weight-general: 400;
     --font-general:'Andika New Basic', sans-serif;
     --line-height-general : 1.75;
@@ -15,12 +15,12 @@
     --color-font-nav:#073B4C;
   /*footer variable*/
     --color-bg-footer: #06d6a0;
-    --font-size-footer: 0.8rem; 
+    --font-size-footer: 0.8rem;
     --color-font-footer: #f5e5e5;
   /*paragraph variable*/
     --font-color-paragraph: yellow;
     --font-size-paragraph:1rem;
-  /*tittle vararible*/ 
+  /*tittle vararible*/
     --font-color-title:red;
     --paddingSection:1vw;
     --marginSection:12vw;
@@ -28,13 +28,13 @@
     --marginMessage:-10vw;
   /*h1*/
     --font-size-h1:1rem;
-  
-  
+
+
   /*h2*/
   --font-size-h2:1.953rem;
   margin:0;
   padding:0;
-  
+
 
 
 
@@ -64,7 +64,7 @@ h1, h2, h3, h4, h5 {
   line-height: var(--line-height-general);
   color:var(--color-font-title);
   }
-  
+
   h1 {
   margin-top: 0;
   margin-bottom: 0;
@@ -75,20 +75,20 @@ h1, h2, h3, h4, h5 {
   p{
     margin-bottom: 2vw;
   }
-  
-  h2 {font-size: var(--font-size-h2);}
-  
 
-  
+  h2 {font-size: var(--font-size-h2);}
+
+
+
   h3 {font-size: 1.953rem;}
-  
+
   h4 {font-size: 1.563rem;}
-  
+
   h5 {font-size: 1.25rem;}
-  
-  
+
+
   small, .text_small {font-size: 0.8rem;}
-  
+
 
 
 a:hover{
@@ -185,7 +185,7 @@ header img {
 }
 
 .menuButton > span, .menuButton > span:hover, .menuButton > span::before, .menuButton > span::after {
-  display: block; 
+  display: block;
   position: absolute;
   width: 100%;
   height: 2px;
@@ -194,7 +194,7 @@ header img {
 }
 
 .menuButton > span::after {
-  content: ''; 
+  content: '';
   top: 8px;
 }
 
@@ -253,7 +253,7 @@ header img {
     border-color: #1173ae;
     border-radius: 50px;
   }
-  
+
 }
 
 
@@ -340,13 +340,13 @@ main{
 
 /*media query pour enlever l'image de fond sur version mobile*/
 
-@media screen and (max-width: 700px) { 
+@media screen and (max-width: 700px) {
 
   main  {
     background: none;
- 
+
   }
- 
+
 }
 
 
@@ -474,7 +474,7 @@ label textarea{
   margin-right: var(--marginMessage);
   height: 20vh;
   width: 50vw;
-} 
+}
 fieldset label textarea{
   display:flex;
   flex-direction: column;
@@ -502,7 +502,7 @@ label.upload {
 
 /*media query*/
 
-  @media screen and (min-width: 700px) { 
+  @media screen and (min-width: 700px) {
     body {
       font-family: var(--font-general);
       font-weight: var(--font-weight-general);
@@ -516,7 +516,7 @@ label.upload {
       padding: 0;
       margin: 0;
       width: 40vw;
-   
+
     }
     .menuBurger{
       display:none;
@@ -534,7 +534,7 @@ label.upload {
     label {
       display:flex;
       flex-direction: column;
-      
+
     }
     fieldset {
       display:flex;
@@ -548,7 +548,7 @@ label.upload {
       margin-right: var(--marginMessage);
       height: 20vh;
       width: 30vw;
-    } 
+    }
 
     div.form{
       display:flex;
@@ -557,7 +557,7 @@ label.upload {
       flex-direction: column;
       margin-bottom: 2rem;
     }
-    
+
     input.field, input.send, textarea{
       background-color: #ddd;
       border:none;
@@ -573,12 +573,12 @@ label.upload {
     input#uploads {
       display:block;
     }
-    
+
     label.upload {
       display:block;
       margin-top: 1rem;
     }
-    
+
   }
 
 
@@ -623,15 +623,15 @@ section.filter{
   font-size: var(--font-size-paragraph);
   margin:0;
   padding:0;
-  
+
 }
 section.filter form{
-  
 
- 
+
+
   margin-left:1vw;
   padding:10px;
-  
+
 }
 
 
@@ -645,15 +645,15 @@ justify-content:left;
 .cardProject1, .cardProject2 {
   display : flex;
   width:90%;
-  padding:var(--paddingSection); 
+  padding:var(--paddingSection);
   }
-  
+
   main img {
-    object-fit: fill;  
+    object-fit: fill;
     /* aspect-ratio: 16/9; */
     width:30vw ;
    max-height:40vh
- 
+
     }
 
 /*La classe .introIndex ert à gérer le bloc central (texte d'intro + image + descr) sur la page d'accueil*/
@@ -670,32 +670,32 @@ width:50vw;
 
     @media screen and (max-width: 700px) {
       main img {
-      
+
         width:60vw ;
-     
-     
+
+
         }
-    
+
       }
 
-    
+
   main .descriptionWildProject, .quiSommesNousParaph{
-      padding-left:var(--paddingSection); 
+      padding-left:var(--paddingSection);
 
   }
- 
+
 
 
   .descriptionWildProject h3, .quiSommesNousParaph h3{
     padding:0;
     margin:0;
 
-  } 
+  }
   .descriptionWildProject p{
     padding:0;
     margin:0;
 
-  } 
+  }
 
 
   @media screen and (min-width: 700px) {
@@ -732,9 +732,9 @@ width:50vw;
 
 
 
-  
 
- 
+
+
 
 
 
@@ -750,7 +750,7 @@ footer{
     justify-content: space-between;
     align-items: flex-end;
     height: 80px;
-    width: auto; 
+    width: auto;
       }
 }
 
@@ -807,19 +807,35 @@ footer li{
   padding: 20px;
   border: 1px solid rgb(43, 42, 42);
   width: 80%; /* Could be more or less, depending on screen size */
+  display: flex;
+  flex-direction: column;
 }
 
 .modal-content img {
   width: 33%;
   height: auto;
-  margin-right: 16vh;
   border-radius: 50%;
+}
+div.link{
+  display:flex;
+  justify-content: center;
+}
+
+div.pictureProfile{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.link a{
+color: black;
 }
 
 /* The Close Button */
 .close {
   color: black;
-  float: right;
+  float: left;
   font-size: 28px;
   font-weight: bold;
 }
@@ -829,11 +845,11 @@ footer li{
   color: red;
   text-decoration: none;
   cursor: pointer;
-} 
+}
 
 
 
-@media screen and (min-width: 700px) { 
+@media screen and (min-width: 700px) {
   .footer {
     background-color: var(--color-bg-footer);
     height: 100px;
@@ -894,6 +910,6 @@ footer li{
   color: red;
   text-decoration: none;
   cursor: pointer;
-} 
+}
 }
 
