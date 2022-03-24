@@ -891,12 +891,14 @@ color: black;
   padding: 20px;
   border: 1px solid rgb(43, 42, 42);
   width: 80%; /* Could be more or less, depending on screen size */
+  display: flex;
+  justify-content: space-between;
+  flex-direction: inherit;
 }
 
 .modal-content img {
-  width: 300px;
+  width: 180px;
   height: auto;
-  margin-right: 16vh;
   border-radius: 50%;
 }
 
@@ -913,6 +915,10 @@ color: black;
   color: red;
   text-decoration: none;
   cursor: pointer;
+}
+
+span.close {
+  position: absolute;
 }
 }
 
