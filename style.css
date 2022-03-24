@@ -356,25 +356,29 @@ main img{
   margin: 0;
   box-shadow: 10px 10px 5px #073B4C;
   border-radius: 5%;
-  /* aspect-ratio: 16/9; */
-  width: 30vw;
-  max-height:40vh
+  width: 70vw;
+  min-height:22vh;
+  max-height:50vh;
 }
 
 main h2 {
-
   display: flex;
   justify-content: flex-start;
   width: 90%;
   padding-top:0;
   margin-top:0;
-  /* border:10px solid #06D6A0;
-  box-shadow: 10px 10px 5px #06D6A0;
-  border-radius: 30%;; */
 }
 
 
 /*index.html*/
+
+.introIndexpc{
+  display:none;
+}
+
+.introIndexmobile{
+  width:57vw;
+}
 
 /*caroussel*/
 
@@ -462,7 +466,6 @@ form.contactForm{
   margin-right: var(--marginForm);
   height: 75vh;
   width: 75vw;
-  margin-bottom: 10rem;
 
 }
 div.form{
@@ -515,12 +518,23 @@ label.upload {
       margin-left:var(--marginSection);
       margin-right:var(--marginSection);
       }
+
     main img {
       padding: 0;
       margin: 0;
-      width: 40vw;
-
+      width: 30vw;
+      min-height: 25vh;
+      max-height:25vh;
     }
+
+    .slideImg {
+      padding: 0;
+      margin: 0;
+      width: 45vw;
+      min-height: 40vh;
+      max-height:40vh;
+    }
+
     .menuBurger{
       display:none;
     }
@@ -532,6 +546,19 @@ label.upload {
       font-weight: bolder;
       }
 
+    .introIndexpc{
+      font-weight: bold;
+      font-size: 1.2rem;
+      display:flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .introIndexmobile{
+      display:none;
+    }
+
 /*formulaire de contact*/
     form{
       display:flex;
@@ -541,11 +568,17 @@ label.upload {
 
     }
 
-    label {
+    form label {
       display:flex;
       flex-direction: column;
+      font-weight: bold;
 
     }
+    input.field{
+      height: 3vh;
+      width: 13vw;
+    }
+
     fieldset {
       display:flex;
       justify-content: space-between;
@@ -657,29 +690,6 @@ justify-content:left;
   width:90%;
   padding:var(--paddingSection);
   }
-
-
-/*La classe .introIndex ert à gérer le bloc central (texte d'intro + image + descr) sur la page d'accueil*/
-
-main .introIndex{
-width:50vw;
-
-}
-
-
-
-
-
-
-    @media screen and (max-width: 700px) {
-      main img {
-
-        width:60vw ;
-
-
-        }
-
-      }
 
 
   main .descriptionWildProject, .quiSommesNousParaph{
