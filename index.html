@@ -11,8 +11,7 @@
 </head>
 <body>
     <header>
-        <a href="./index.html"><img src="./assets/logo-wild-code-school-white.png"alt="logo wild code school"></a>
-        <nav>
+        <a href="./index.html"><img src="./assets/wild-project.png"alt="logo wild code school"></a>        <nav>
           <div class="menuBurger">
             <input id="menuToogle" type="checkbox">
             <label class="menuButton" for="menuToogle"><span></span></label>
@@ -33,21 +32,39 @@
     </header>
     <main>
         <div class="introIndex">
-        <p>Bienvenue sur le portail des projets finaux de nos wilders. 
-            Decouvrez comment, grace aux pouvoirs de leur chaussettes,
+            <p>Bienvenue sur le portail des projets finaux de nos wilders. 
+                Decouvrez comment, grace aux pouvoirs de leur chaussettes,
 
-            ils ont exprimé leurs talents créatifs et techniques.
-        </p>
+                ils ont exprimé leurs talents créatifs et techniques.
+            </p>
+        </div>       
+<!-- caroussel container -->
+<div class="caroussel">
+
+    <!-- images link plus galery-->
+    <div class="slide fade">
+        <a href="galerie.html"><img src="./assets/Ferme_voliere.png"></a>
     </div>
-        <a href="galerie.html"><img src="./assets/Ferme_voliere.png" alt="image test">
-       
-       
-        
-        <div class="radio">
-            <input class="btnradio" type="radio" name="">
-            <input class="btnradio" type="radio" name="">
-            <input class="btnradio" type="radio" name="">
-        </div>
+  
+    <div class="slide fade">
+        <a href="galerie.html"><img src="./assets/Made4Spitch.png"></a>
+    </div>
+  
+    <div class="slide fade">
+        <a href="galerie.html"><img src="./assets/Retrofit.png"></a>
+    </div>
+  
+    <!-- button next and previous  -->
+    <button class="prev" onclick="plusSlides(-1)">&#10094;</button>
+    <button class="next" onclick="plusSlides(1)">&#10095;</button>
+</div>
+  
+  <!-- The dots/circles -->
+  <div style="text-align:center">
+    <span class="dot" onclick="currentSlide(1)"></span>
+    <span class="dot" onclick="currentSlide(2)"></span>
+    <span class="dot" onclick="currentSlide(3)"></span>
+  </div>
     </main>
     <footer>
         <div class="footer"> 
@@ -75,9 +92,50 @@
              <li>&copy Copyright</li>
              <li>Mention légales</li>
              <li><a href="https://www.wildcodeschool.com/fr-FR">Wild Code School</a></li>
-             <li>contact</li>
+             <li><a id="myBtn">Contact</a></li>
+         <!-- Trigger/Open The Modal -->
+             <!-- The Modal -->
+             <div id="myModal" class="modal">
+ 
+             <!-- Modal content -->
+             <div class="modal-content">
+                 <span class="close">&times;</span>
+                 <!-- mettre image de git + les  logos pour cliquer dessus  mettre display flex et en borderadius 50px-->
+                 <div class="pictureProfile">
+                     <img src="./assets/Hamza.jpeg" alt="Photo Hamza"/> 
+                     <div class ="link">
+                         <a href="https://www.linkedin.com/in/hamza-benidar-7134ba140/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+                         <a href="https://github.com/Hamza-Luciano" target="_blank"><i class="fa-brands fa-github"></i></a>
+                     </div>             
+                 </div>
+                 <div class="pictureProfile">
+                     <img src="./assets/Laura.jpeg"/>
+                     <div class ="link">
+                         <a href="https://www.linkedin.com/in/laura-courquin-134330214/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+                         <a href="https://github.com/LauraCourquin/" target="_blank"><i class="fa-brands fa-github"></i></a>
+                     </div>  
+                 </div>
+                 <div class="pictureProfile">
+                     <img src="./assets/julianne.jpeg"/>
+                     <div class ="link">
+                         <a href="https://www.linkedin.com/in/juliane-casier-bb642832/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+                         <a href="https://github.com/ilalande/ " target="_blank"><i class="fa-brands fa-github"></i></a>
+                     </div>  
+                 </div>
+                 <div class="pictureProfile">
+                     <img src="./assets/françois.jpg"/>
+                     <div class ="link">
+                         <a href="https://www.linkedin.com/in/fran%C3%A7ois-salmon-16610b234/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+                         <a href="https://github.com/Ashram939 " target="_blank"><i class="fa-brands fa-github"></i></a>
+                     </div>  
+                 </div>
+             </div>
+ 
+             </div> 
          </ul> 
         </div>
-     </footer>
+     </footer>   
+     <script src="modal.js"></script>
+    <script src="caroussel.js"></script>
 </body>
 </html>

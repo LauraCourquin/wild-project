@@ -5,7 +5,7 @@
   /* general variable*/
     --color-bg-general: #f5e5e5;
     --font-size-general: 1rem;
-    --color-font-general: #073B4C; 
+    --color-font-general: #073B4C;
     --font-weight-general: 400;
     --font-general:'Andika New Basic', sans-serif;
     --line-height-general : 1.75;
@@ -15,12 +15,12 @@
     --color-font-nav:#073B4C;
   /*footer variable*/
     --color-bg-footer: #06d6a0;
-    --font-size-footer: 0.8rem; 
+    --font-size-footer: 0.8rem;
     --color-font-footer: #f5e5e5;
   /*paragraph variable*/
     --font-color-paragraph: yellow;
     --font-size-paragraph:1rem;
-  /*tittle vararible*/ 
+  /*tittle vararible*/
     --font-color-title:red;
     --paddingSection:1vw;
     --marginSection:12vw;
@@ -28,13 +28,13 @@
     --marginMessage:-10vw;
   /*h1*/
     --font-size-h1:1rem;
-  
-  
+
+
   /*h2*/
   --font-size-h2:1.953rem;
   margin:0;
   padding:0;
-  
+
 
 
 
@@ -64,7 +64,7 @@ h1, h2, h3, h4, h5 {
   line-height: var(--line-height-general);
   color:var(--color-font-title);
   }
-  
+
   h1 {
   margin-top: 0;
   margin-bottom: 0;
@@ -75,20 +75,20 @@ h1, h2, h3, h4, h5 {
   p{
     margin-bottom: 2vw;
   }
-  
-  h2 {font-size: var(--font-size-h2);}
-  
 
-  
+  h2 {font-size: var(--font-size-h2);}
+
+
+
   h3 {font-size: 1.953rem;}
-  
+
   h4 {font-size: 1.563rem;}
-  
+
   h5 {font-size: 1.25rem;}
-  
-  
+
+
   small, .text_small {font-size: 0.8rem;}
-  
+
 
 
 a:hover{
@@ -145,7 +145,7 @@ header img {
   width: auto;
   height: 5vw;
   max-height: 200px;
-  margin-left: 35vh;
+  margin-left: 2vh;
   margin-top: 1vh;
 }
 
@@ -177,7 +177,7 @@ header img {
   align-items: center;
   position: fixed;
   top: 3px;
-  left: 20px;
+  right: 20px;
   width: 26px;
   height: 26px;
   z-index: 1;
@@ -185,7 +185,7 @@ header img {
 }
 
 .menuButton > span, .menuButton > span:hover, .menuButton > span::before, .menuButton > span::after {
-  display: block; 
+  display: block;
   position: absolute;
   width: 100%;
   height: 2px;
@@ -194,7 +194,7 @@ header img {
 }
 
 .menuButton > span::after {
-  content: ''; 
+  content: '';
   top: 8px;
 }
 
@@ -233,6 +233,10 @@ header img {
     width: 75%;
     height: auto;
   }
+
+  .header img {
+    margin-left: 11vh;
+  }
   .desktopMenu {
     display: flex;
     justify-content: space-around;
@@ -249,7 +253,7 @@ header img {
     border-color: #1173ae;
     border-radius: 50px;
   }
-  
+
 }
 
 
@@ -336,13 +340,13 @@ main{
 
 /*media query pour enlever l'image de fond sur version mobile*/
 
-@media screen and (max-width: 700px) { 
+@media screen and (max-width: 700px) {
 
   main  {
     background: none;
- 
+
   }
- 
+
 }
 
 
@@ -370,24 +374,77 @@ main h2 {
 
 /*index.html*/
 
-div.radio{
-  display: flex;
-  justify-content: center;
-  margin :3vw;
+/*caroussel*/
+
+* {box-sizing:border-box}
+
+/* caroussel container */
+.caroussel {
+  max-width: 70vw;
+  position: relative;
+  margin: auto;
 }
 
-input.btnradio{
-  background-color: pink;
-  border: #F76D6D solid 4px;
-  width: 2.5vw;
-  height: 2.5vw;
+/* Hide the images by default */
+.mySlides {
+  display: none;
 }
 
-input.btnradio:hover{
-   background-color: #F76D6D;
-}
+/* button next and previous */
+  .prev, .next {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+  }
 
+  /* Position the "next button" to the right */
+  .next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+  }
 
+  /* On hover, add a black background color with a little bit see-through */
+  .prev:hover, .next:hover {
+    background-color: rgba(0,0,0,0.8);
+  }
+
+/* The dots/bullets/indicators */
+  .dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+  }
+
+  .active, .dot:hover {
+    background-color: #717171;
+  }
+
+/* Fading animation */
+  .fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+  }
+
+  @keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+  }
 
 /*presentation*/
 
@@ -417,7 +474,7 @@ label textarea{
   margin-right: var(--marginMessage);
   height: 20vh;
   width: 50vw;
-} 
+}
 fieldset label textarea{
   display:flex;
   flex-direction: column;
@@ -435,9 +492,17 @@ input.send{
   width: 20vw;
 }
 
+input#uploads {
+  display:none;
+}
+
+label.upload {
+  display:none;
+}
+
 /*media query*/
 
-  @media screen and (min-width: 700px) { 
+  @media screen and (min-width: 700px) {
     body {
       font-family: var(--font-general);
       font-weight: var(--font-weight-general);
@@ -451,7 +516,7 @@ input.send{
       padding: 0;
       margin: 0;
       width: 40vw;
-   
+
     }
     .menuBurger{
       display:none;
@@ -463,12 +528,13 @@ input.send{
       width: 50vw;
       height: auto;
       flex-direction: column;
+
     }
 
     label {
       display:flex;
       flex-direction: column;
-      
+
     }
     fieldset {
       display:flex;
@@ -482,7 +548,7 @@ input.send{
       margin-right: var(--marginMessage);
       height: 20vh;
       width: 30vw;
-    } 
+    }
 
     div.form{
       display:flex;
@@ -491,7 +557,7 @@ input.send{
       flex-direction: column;
       margin-bottom: 2rem;
     }
-    
+
     input.field, input.send, textarea{
       background-color: #ddd;
       border:none;
@@ -503,6 +569,16 @@ input.send{
       margin-top: 2vw;
       width: 5vw;
     }
+
+    input#uploads {
+      display:block;
+    }
+
+    label.upload {
+      display:block;
+      margin-top: 1rem;
+    }
+
   }
 
 
@@ -547,15 +623,15 @@ section.filter{
   font-size: var(--font-size-paragraph);
   margin:0;
   padding:0;
-  
+
 }
 section.filter form{
-  
 
- 
+
+
   margin-left:1vw;
   padding:10px;
-  
+
 }
 
 
@@ -563,20 +639,21 @@ section.filter form{
 main h2{
 justify-content:left;
 
+
 }
 
 .cardProject1, .cardProject2 {
   display : flex;
   width:90%;
-  padding:var(--paddingSection); 
+  padding:var(--paddingSection);
   }
-  
+
   main img {
-    object-fit: fill;  
+    object-fit: fill;
     /* aspect-ratio: 16/9; */
     width:30vw ;
    max-height:40vh
- 
+
     }
 
 /*La classe .introIndex ert à gérer le bloc central (texte d'intro + image + descr) sur la page d'accueil*/
@@ -593,31 +670,32 @@ width:50vw;
 
     @media screen and (max-width: 700px) {
       main img {
-      
+
         width:60vw ;
-     
-     
+
+
         }
-    
+
       }
 
-    
+
   main .descriptionWildProject, .quiSommesNousParaph{
-      padding-left:var(--paddingSection); 
+      padding-left:var(--paddingSection);
 
   }
-  .descriptionWildProject, .quiSommesNousParaph{
-  
 
-  } 
 
 
   .descriptionWildProject h3, .quiSommesNousParaph h3{
     padding:0;
     margin:0;
 
+  }
+  .descriptionWildProject p{
+    padding:0;
+    margin:0;
 
-  } 
+  }
 
 
   @media screen and (min-width: 700px) {
@@ -654,7 +732,7 @@ width:50vw;
 
 
 
-  
+
 
 
 
@@ -672,7 +750,7 @@ footer{
     justify-content: space-between;
     align-items: flex-end;
     height: 80px;
-    width: auto; 
+    width: auto;
       }
 }
 
@@ -701,7 +779,77 @@ footer li{
 
 }
 
-@media screen and (min-width: 700px) { 
+#myBtn {
+  background-color: #06d6a0;
+  border-color: #06d6a0;
+  cursor: pointer;
+}
+
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: #06d6a0(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+
+
+/* Modal Content/Box */
+.modal-content {
+  background-color: #ffd166;
+  margin: 15% auto; /* 15% from the top and centered */
+  padding: 20px;
+  border: 1px solid rgb(43, 42, 42);
+  width: 80%; /* Could be more or less, depending on screen size */
+  display: flex;
+  flex-direction: column;
+}
+
+.modal-content img {
+  width: 33%;
+  height: auto;
+  border-radius: 50%;
+}
+div.link{
+  display:flex;
+  justify-content: center;
+}
+
+div.pictureProfile{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.link a{
+color: black;
+}
+
+/* The Close Button */
+.close {
+  color: black;
+  float: left;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: red;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+
+
+@media screen and (min-width: 700px) {
   .footer {
     background-color: var(--color-bg-footer);
     height: 100px;
@@ -717,5 +865,51 @@ footer li{
   .footer li {
     margin-right: 1em;
   }
+  /* The Modal (background) */
+ .modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: #06d6a0(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+
+
+/* Modal Content/Box */
+.modal-content {
+  background-color: #ffd166;
+  margin: 15% auto; /* 15% from the top and centered */
+  padding: 20px;
+  border: 1px solid rgb(43, 42, 42);
+  width: 80%; /* Could be more or less, depending on screen size */
+}
+
+.modal-content img {
+  width: 300px;
+  height: auto;
+  margin-right: 16vh;
+  border-radius: 50%;
+}
+
+/* The Close Button */
+.close {
+  color: black;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: red;
+  text-decoration: none;
+  cursor: pointer;
+}
 }
 
